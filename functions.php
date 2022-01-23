@@ -92,7 +92,7 @@ function pattern( string $slug = 'default' ) {
         $pattern = ob_get_contents();
         ob_end_clean();
 
-        return $pattern;
+        return str_replace( [ "\n", "\r", "\t" ], '', $pattern );
 }
 
 function add_pattern( string $slug, array $args = [] ) {

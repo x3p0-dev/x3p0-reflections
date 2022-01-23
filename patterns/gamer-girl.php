@@ -1,5 +1,5 @@
 <!-- wp:cover {"url":"<?= esc_url( get_theme_file_uri( 'public/img/3761c413981c2a48.79794772-2048x1536.jpg' ) ) ?>","id":9211,"hasParallax":true,"dimRatio":50,"overlayColor":"secondary-700","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"2rem","right":"2rem","bottom":"2rem","left":"2rem"}}}} -->
-<div class="wp-block-cover alignfull is-light has-parallax" style="padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem;background-image:url(<?= esc_url( get_theme_file_uri( 'public/img/3761c413981c2a48.79794772-2048x1536.jpg' ) ) ?>)"><span aria-hidden="true" class="has-secondary-700-background-color has-background-dim-50 wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":"4rem"} -->
+<div class="wp-block-cover alignfull is-light has-parallax" style="padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem;background-image:url(<?= esc_url( get_theme_file_uri( 'public/img/3761c413981c2a48.79794772-2048x1536.jpg' ) ) ?>)"><span aria-hidden="true" class="has-secondary-700-background-color wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":"4rem"} -->
 <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
