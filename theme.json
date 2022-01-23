@@ -9,7 +9,7 @@
                 },
                 "color": {
                         "custom": true,
-                        "defaultGradients": false,
+                        "defaultGradients": true,
                         "defaultPalette": false,
                         "link": true,
                         "duotone": [],
@@ -231,13 +231,13 @@
                         ]
                 },
                 "typography": {
+                        "customFontSize": false,
                         "dropCap": true,
-                        "fontSize": false,
                         "fontStyle": true,
                         "fontWeight": true,
                         "letterSpacing": true,
                         "lineHeight": false,
-                        "textDecorations": true,
+                        "textDecoration": true,
                         "textTransform": true,
                         "fontFamilies": [
                                 {
@@ -308,42 +308,42 @@
                                         "name": "XL"
                                 },
                                 {
-                                        "slug": "2xl",
+                                        "slug": "2-xl",
                                         "size": "1.5rem",
                                         "name": "2XL"
                                 },
                                 {
-                                        "slug": "3xl",
+                                        "slug": "3-xl",
                                         "size": "1.875rem",
                                         "name": "3XL"
                                 },
                                 {
-                                        "slug": "4xl",
+                                        "slug": "4-xl",
                                         "size": "2.25rem",
                                         "name": "4XL"
                                 },
                                 {
-                                        "slug": "5xl",
+                                        "slug": "5-xl",
                                         "size": "3rem",
                                         "name": "5XL"
                                 },
                                 {
-                                        "slug": "6xl",
+                                        "slug": "6-xl",
                                         "size": "4rem",
                                         "name": "6XL"
                                 },
                                 {
-                                        "slug": "7xl",
+                                        "slug": "7-xl",
                                         "size": "4.5rem",
                                         "name": "7XL"
                                 },
                                 {
-                                        "slug": "8xl",
+                                        "slug": "8-xl",
                                         "size": "6rem",
                                         "name": "8XL"
                                 },
                                 {
-                                        "slug": "9xl",
+                                        "slug": "9-xl",
                                         "size": "8rem",
                                         "name": "9XL"
                                 }
@@ -494,10 +494,33 @@
                                 "color": {
                                         "text": "var( --wp--preset--color--white )",
                                         "link": "var( --wp--preset--color--white )"
+                                },
+                                "spacing": {
+                                        "padding": "var( --wp--custom--spacing--global )"
+                                }
+                        },
+                        "core/site-title": {
+                                "elements": {
+                                        "link" : {
+                                                "typography": {
+                                                        "textDecoration": "none"
+                                                }
+                                        }
+                                }
+                        },
+                        "core/social-links": {
+                                "spacing": {
+                                        "blockGap": "var( --wp--custom--spacing--4 )"
                                 }
                         }
                 }
         },
         "customTemplates": {},
-        "templateParts": []
+        "templateParts": [
+                {
+                        "name": "content",
+                        "area": "content",
+                        "title": "Site Content"
+                }
+        ]
 }

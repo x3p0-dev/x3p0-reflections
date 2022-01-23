@@ -13,7 +13,114 @@
  * License URI:      https://www.gnu.org/licenses/gpl-2.0.html
  */
 
+/**
+ * -----------------------------------------------------------------------------
+ * Block: Buttons
+ * -----------------------------------------------------------------------------
+**/
+
+/* no hover/focus style theme.json support */
 .wp-block-button__link:hover,
 .wp-block-button__link:focus {
         text-decoration: underline;
 }
+
+/**
+ * -----------------------------------------------------------------------------
+ * Block: Group
+ * -----------------------------------------------------------------------------
+**/
+
+.wp-block-group:where( .has-background ) {
+        padding: var( --wp--custom--spacing--global );
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * Block: Paragraph
+ * -----------------------------------------------------------------------------
+**/
+
+p.has-background {
+        padding: var( --wp--custom--spacing--global );
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * Block: Separator
+ * -----------------------------------------------------------------------------
+**/
+
+.wp-block-separator.is-style-wide {
+        border: none;
+	border-top: 1px solid currentColor;
+	background-color: transparent;
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * Block: Social Links
+ * -----------------------------------------------------------------------------
+**/
+
+.wp-block-social-links {
+        /* theme.json blockGap gets overwritten inside of Group */
+        --wp--style--block-gap: var( --wp--custom--spacing--6 );
+}
+
+.wp-block-social-links.has-normal-icon-size {
+        font-size: var( --wp--preset--font-size--lg );
+}
+
+.wp-block-social-links.has-normal-icon-size {
+        font-size: var( --wp--preset--font-size--xl );
+}
+
+.wp-block-social-links.has-large-icon-size {
+        font-size: var( --wp--preset--font-size--2-xl );
+}
+
+.wp-block-social-links.has-huge-icon-size {
+        font-size: var( --wp--preset--font-size--3-xl );
+}
+
+.wp-block-social-links:not([class*=is-style-]) .wp-block-social-link a,
+.wp-block-social-links.is-style-default .wp-block-social-link a {
+        padding: 0.375em;
+}
+
+.wp-block-social-links.is-style-pill-shape .wp-social-link a {
+        padding-left:  calc((2/3) * 1.25em);
+        padding-right: calc((2/3) * 1.25em);
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * Block: Site Title
+ * -----------------------------------------------------------------------------
+**/
+
+/* no hover/focus style theme.json support */
+.wp-block-site-title a:hover,
+.wp-block-site-title a:focus {
+        text-decoration: underline;
+}
+
+/**
+ * Utilities.
+**/
+
+/* WP has no way to tie a line-height to a font-size. */
+.has-9-xl-font-size { line-height: var( --wp--custom--line-height--9-xl ); }
+.has-8-xl-font-size { line-height: var( --wp--custom--line-height--8-xl ); }
+.has-7-xl-font-size { line-height: var( --wp--custom--line-height--7-xl ); }
+.has-6-xl-font-size { line-height: var( --wp--custom--line-height--6-xl ); }
+.has-5-xl-font-size { line-height: var( --wp--custom--line-height--5-xl ); }
+.has-4-xl-font-size { line-height: var( --wp--custom--line-height--4-xl ); }
+.has-3-xl-font-size { line-height: var( --wp--custom--line-height--3-xl ); }
+.has-2-xl-font-size { line-height: var( --wp--custom--line-height--2-xl ); }
+.has-xl-font-size   { line-height: var( --wp--custom--line-height--xl ); }
+.has-lg-font-size   { line-height: var( --wp--custom--line-height--lg ); }
+.has-base-font-size { line-height: var( --wp--custom--line-height--base ); }
+.has-sm-font-size   { line-height: var( --wp--custom--line-height--sm ); }
+.has-xs-font-size   { line-height: var( --wp--custom--line-height--xs ); }
