@@ -1,0 +1,19 @@
+/*!
+ * Theme Name:       X3P0 - Profile
+ * Theme URI:        https://github.com/x3p0-dev/x3p0-profile
+ * Description:      WordPress block theme for creating profile, links, and similar one-page sites.
+ * Version:          1.0.0-alpha
+ * Author:           Justin Tadlock
+ * Author URI:       https://github.com/x3p0-dev
+ * Tags:             block-patterns, block-styles, full-site-editing, wide-blocks
+ * Text Domain:      x3p0-profile
+ * Domain Path:      /public/lang
+ * Requires PHP:     7.2
+ * License:          GNU General Public License v2.0 or later
+ * License URI:      https://www.gnu.org/licenses/gpl-2.0.html
+ */
+
+.wp-block-button__link:hover,
+.wp-block-button__link:focus {
+        text-decoration: underline;
+}
