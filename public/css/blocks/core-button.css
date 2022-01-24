@@ -1,0 +1,5 @@
+/* no hover/focus style theme.json support */
+.wp-block-button__link:hover,
+.wp-block-button__link:focus {
+        text-decoration: underline;
+}

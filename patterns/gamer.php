@@ -11,7 +11,7 @@
 <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}}} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"1rem"}}} -->
 <div class="wp-block-group"><!-- wp:site-logo {"align":"center","className":"is-style-rounded"} /-->
 
 <!-- wp:site-title {"textAlign":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"textTransform":"uppercase"}},"textColor":"white","fontSize":"2xl","fontFamily":"mono"} /-->

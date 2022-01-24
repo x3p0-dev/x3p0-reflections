@@ -15,28 +15,6 @@
 
 /**
  * -----------------------------------------------------------------------------
- * Block: Buttons
- * -----------------------------------------------------------------------------
-**/
-
-/* no hover/focus style theme.json support */
-.wp-block-button__link:hover,
-.wp-block-button__link:focus {
-        text-decoration: underline;
-}
-
-/**
- * -----------------------------------------------------------------------------
- * Block: Group
- * -----------------------------------------------------------------------------
-**/
-
-.wp-block-group:where( .has-background ) {
-        padding: var( --wp--custom--spacing--global );
-}
-
-/**
- * -----------------------------------------------------------------------------
  * Block: Heading
  * -----------------------------------------------------------------------------
 **/
@@ -57,110 +35,8 @@ hr + :where( h1, h2, h3, h4, h5, h6 ) {
 
 /**
  * -----------------------------------------------------------------------------
- * Block: Media & Text
- * -----------------------------------------------------------------------------
-**/
-
-/* some content can break out of this, particular with nested Group blocks, only
-   seen in the site editor and patterns inserter/explorer, worked OK on front
-   and post editor */
-.wp-block-media-text__content {
-        box-sizing: border-box;
-}
-
-/**
- * -----------------------------------------------------------------------------
- * Block: Paragraph
- * -----------------------------------------------------------------------------
-**/
-
-p.has-background {
-        padding: var( --wp--custom--spacing--global );
-}
-
-/**
- * -----------------------------------------------------------------------------
- * Block: Separator
- * -----------------------------------------------------------------------------
-**/
-
-.wp-block-separator.is-style-wide {
-        border: none;
-	border-top: 1px solid currentColor;
-	background-color: transparent;
-}
-
-/**
- * -----------------------------------------------------------------------------
- * Block: Social Links
- * -----------------------------------------------------------------------------
-**/
-
-.wp-block-social-links {
-        /* theme.json blockGap gets overwritten inside of Group */
-        --wp--style--block-gap: var( --wp--custom--spacing--6 );
-}
-
-.wp-block-social-links.has-normal-icon-size {
-        font-size: var( --wp--preset--font-size--lg );
-}
-
-.wp-block-social-links.has-normal-icon-size {
-        font-size: var( --wp--preset--font-size--xl );
-}
-
-.wp-block-social-links.has-large-icon-size {
-        font-size: var( --wp--preset--font-size--2-xl );
-}
-
-.wp-block-social-links.has-huge-icon-size {
-        font-size: var( --wp--preset--font-size--3-xl );
-}
-
-.wp-block-social-links:not([class*=is-style-]) .wp-block-social-link a,
-.wp-block-social-links.is-style-default .wp-block-social-link a {
-        padding: 0.375em;
-}
-
-.wp-block-social-links.is-style-pill-shape .wp-social-link a {
-        padding-left:  calc((2/3) * 1.25em);
-        padding-right: calc((2/3) * 1.25em);
-}
-
-/**
- * -----------------------------------------------------------------------------
- * Block: Site Title
- * -----------------------------------------------------------------------------
-**/
-
-/* no hover/focus style theme.json support */
-.wp-block-site-title a:hover,
-.wp-block-site-title a:focus {
-        text-decoration: underline;
-}
-
-/**
- * -----------------------------------------------------------------------------
- * Block: Spacer
- * -----------------------------------------------------------------------------
-**/
-
-/* limits the max height of the spacer block on smaller screens */
-@media ( max-width: 48rem ) {
-        .wp-block-spacer {
-                max-height: 4rem;
-        }
-}
-
-@media ( max-width: 40rem ) {
-        .wp-block-spacer {
-                max-height: 2rem;
-        }
-}
-
-
-/**
  * Utilities.
+ * -----------------------------------------------------------------------------
 **/
 
 /* WP has no way to tie a line-height to a font-size. */

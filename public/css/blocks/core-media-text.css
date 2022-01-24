@@ -1,0 +1,6 @@
+/* some content can break out of this, particular with nested Group blocks, only
+   seen in the site editor and patterns inserter/explorer, worked OK on front
+   and post editor */
+.wp-block-media-text__content {
+        box-sizing: border-box;
+}

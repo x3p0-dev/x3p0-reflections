@@ -1,0 +1,3 @@
+.wp-block-group:where( .has-background ) {
+        padding: var( --wp--custom--spacing--global );
+}

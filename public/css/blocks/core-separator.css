@@ -1,0 +1,5 @@
+.wp-block-separator.is-style-wide {
+        border: none;
+	border-top: 1px solid currentColor;
+	background-color: transparent;
+}

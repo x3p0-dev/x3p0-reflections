@@ -1,0 +1,46 @@
+.wp-block-social-links {
+        /* theme.json blockGap gets overwritten inside of Group */
+        --wp--style--block-gap: var( --wp--custom--spacing--6 );
+}
+
+.wp-block-social-links.has-normal-icon-size {
+        font-size: var( --wp--preset--font-size--lg );
+}
+
+.wp-block-social-links.has-normal-icon-size {
+        font-size: var( --wp--preset--font-size--xl );
+}
+
+.wp-block-social-links.has-large-icon-size {
+        font-size: var( --wp--preset--font-size--2-xl );
+}
+
+.wp-block-social-links.has-huge-icon-size {
+        font-size: var( --wp--preset--font-size--3-xl );
+}
+
+.wp-block-social-links:not([class*=is-style-]) .wp-block-social-link a,
+.wp-block-social-links.is-style-default .wp-block-social-link a {
+        padding: 0.375em;
+}
+
+.wp-block-social-links.is-style-pill-shape .wp-social-link a {
+        padding-left:  calc((2/3) * 1.25em);
+        padding-right: calc((2/3) * 1.25em);
+}
+
+.wp-block-social-links.is-style-rectangle .wp-social-link,
+.wp-block-social-links.is-style-rectangle-outline .wp-social-link {
+        border-radius: 0;
+}
+
+.wp-block-social-links[class*=is-style-rectangle] .wp-social-link a,
+.wp-block-social-links[class*=is-style-rectangle] .wp-social-link button {
+        padding-left: 1rem;
+        padding-right: 1rem;
+}
+
+.wp-block-social-links.is-style-rectangle-outline .wp-social-link a,
+.wp-block-social-links.is-style-rectangle-outline .wp-social-link button {
+        border: 1px solid currentColor;
+}
