@@ -27,6 +27,15 @@ add_action( 'admin_init', function() {
 } );
 
 add_action( 'init', function() {
+        add_image_size( 'exhale-2x3-lg', 1024, 1536, true );
+} );
+
+add_filter( 'image_size_names_choose', function( $sizes ) {
+        $sizes[ 'exhale-2x3-lg'] = __( '2:3 - Large', 'x3p0-profile' );
+        return $sizes;
+} );
+
+add_action( 'init', function() {
         register_block_pattern_category( 'x3p0-profile', [
                 'label' => __( 'X3P0 - Profile', 'x3p0-profile' )
         ] );
@@ -42,6 +51,10 @@ add_action( 'init', function() {
         add_pattern( 'notes', [
                 'title' => __( 'Notes', 'x3p0-profile' )
         ] );
+
+        add_pattern( 'photo-info', [
+                'title' => __( 'Photo + Info', 'x3p0-profile' )
+        ] );
 } );
 
 add_action( 'init', function() {
@@ -53,6 +66,35 @@ add_action( 'init', function() {
                         ul.is-style-padded li + li,
                         ol.is-style-padded li + li {
                                 margin-top: var( --wp--custom--spacing--2 );
+                        }'
+        ] );
+
+        register_block_style( 'core/social-links', [
+        	'name'  => 'rectangle',
+        	'label' => __( 'Rectangle', 'x3p0-profile' ),
+                'inline_style' => '
+                        .wp-block-social-links.is-style-rectangle .wp-social-link {
+                                border-radius: 0;
+                        }
+                        .wp-block-social-links.is-style-rectangle .wp-social-link a,
+                        .wp-block-social-links.is-style-rectangle .wp-social-link button {
+                                padding-left: 1rem;
+                                padding-right: 1rem;
+                        }'
+        ] );
+
+        register_block_style( 'core/social-links', [
+        	'name'  => 'rectangle-outline',
+        	'label' => __( 'Rectangle Outline', 'x3p0-profile' ),
+                'inline_style' => '
+                        .wp-block-social-links.is-style-rectangle-outline .wp-social-link {
+                                border-radius: 0;
+                        }
+                        .wp-block-social-links.is-style-rectangle-outline .wp-social-link a,
+                        .wp-block-social-links.is-style-rectangle-outline .wp-social-link button {
+                                padding-left: 1rem;
+                                padding-right: 1rem;
+                                border: 1px solid currentColor;
                         }'
         ] );
 } );
@@ -92,7 +134,7 @@ function pattern( string $slug = 'default' ) {
         $pattern = ob_get_contents();
         ob_end_clean();
 
-        return str_replace( [ "\n", "\r", "\t" ], '', $pattern );
+        return $pattern;
 }
 
 function add_pattern( string $slug, array $args = [] ) {
@@ -101,7 +143,6 @@ function add_pattern( string $slug, array $args = [] ) {
                 "x3p0-profile/{$slug}",
                 wp_parse_args( $args, [
                         'categories'    => [ 'x3p0-profile' ],
-                	'viewportWidth' => 1520,
                         'blockTypes'    => [ 'core/template-part' ],
                         'content'       => $content
                 ] )

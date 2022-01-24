@@ -37,6 +37,39 @@
 
 /**
  * -----------------------------------------------------------------------------
+ * Block: Heading
+ * -----------------------------------------------------------------------------
+**/
+
+:where( h1, h2, h3, h4, h5, h6 ) + * {
+        margin-top: var( --wp--custom--spacing--4 );
+}
+
+:where( h1, h2, h3, h4, h5, h6 ) + :where( h2, h3, h4, h5 ) {
+        margin-top: var( --wp--custom--spacing--2 );
+        --wp--style--block-gap: var( --wp--custom--spacing--2 );
+}
+
+.wp-block-spacer + :where( h1, h2, h3, h4, h5, h6 ),
+hr + :where( h1, h2, h3, h4, h5, h6 ) {
+	margin-top: var( --wp--custom--spacing--global );
+}
+
+/**
+ * -----------------------------------------------------------------------------
+ * Block: Media & Text
+ * -----------------------------------------------------------------------------
+**/
+
+/* some content can break out of this, particular with nested Group blocks, only
+   seen in the site editor and patterns inserter/explorer, worked OK on front
+   and post editor */
+.wp-block-media-text__content {
+        box-sizing: border-box;
+}
+
+/**
+ * -----------------------------------------------------------------------------
  * Block: Paragraph
  * -----------------------------------------------------------------------------
 **/
@@ -105,6 +138,26 @@ p.has-background {
 .wp-block-site-title a:focus {
         text-decoration: underline;
 }
+
+/**
+ * -----------------------------------------------------------------------------
+ * Block: Spacer
+ * -----------------------------------------------------------------------------
+**/
+
+/* limits the max height of the spacer block on smaller screens */
+@media ( max-width: 48rem ) {
+        .wp-block-spacer {
+                max-height: 4rem;
+        }
+}
+
+@media ( max-width: 40rem ) {
+        .wp-block-spacer {
+                max-height: 2rem;
+        }
+}
+
 
 /**
  * Utilities.
