@@ -40,29 +40,29 @@ add_action( 'init', function() {
                 'label' => __( 'X3P0 - Profile', 'x3p0-profile' )
         ] );
 
-        add_pattern( 'default', [
-                'title' => __( 'Default', 'x3p0-profile' ),
-                'viewportWidth' => 672
-        ] );
-
         add_pattern( 'artist', [
                 'title' => __( 'Artist', 'x3p0-profile' ),
                 'viewportWidth' => 672
         ] );
 
-        add_pattern( 'gamer-girl', [
-                'title' => __( 'Gamer Girl', 'x3p0-profile' ),
+        add_pattern( 'chiemsee', [
+                'title' => __( 'Chiemsee', 'x3p0-profile' ),
                 'viewportWidth' => 672
         ] );
 
-        add_pattern( 'notes', [
-                'title' => __( 'Notes', 'x3p0-profile' ),
-                'viewportWidth' => 672
-        ] );
-
-        add_pattern( 'photo-info', [
-                'title' => __( 'Photo + Info', 'x3p0-profile' ),
+        add_pattern( 'felix', [
+                'title' => __( 'Felix', 'x3p0-profile' ),
                 'viewportWidth' => 1056
+        ] );
+
+        add_pattern( 'gamer', [
+                'title' => __( 'Gamer', 'x3p0-profile' ),
+                'viewportWidth' => 672
+        ] );
+
+        add_pattern( 'notes-in-the-void', [
+                'title' => __( 'Notes in the Void', 'x3p0-profile' ),
+                'viewportWidth' => 672
         ] );
 } );
 
