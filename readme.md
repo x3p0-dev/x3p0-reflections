@@ -1,9 +1,11 @@
 # X3P0 - Profile
 
-A one-page user-profile WordPress theme.  Currently, it ships with three patterns.  More will be added.
+A one-page user-profile WordPress theme.  Currently, it ships with a few patterns.  More will be added.
 
 ## Credits
 
+- `patterns/artist.php`
+        - [Photo by Martin Sauter](https://wordpress.org/photos/photo/57661e915c/)
 - `patterns/default.php`
         - [Photo by Anariel Design](https://wordpress.org/photos/photo/22261bc467/)
 - `patterns/gamer-girl.php`

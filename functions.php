@@ -41,19 +41,28 @@ add_action( 'init', function() {
         ] );
 
         add_pattern( 'default', [
-                'title' => __( 'Default', 'x3p0-profile' )
+                'title' => __( 'Default', 'x3p0-profile' ),
+                'viewportWidth' => 672
+        ] );
+
+        add_pattern( 'artist', [
+                'title' => __( 'Artist', 'x3p0-profile' ),
+                'viewportWidth' => 672
         ] );
 
         add_pattern( 'gamer-girl', [
-                'title' => __( 'Gamer Girl', 'x3p0-profile' )
+                'title' => __( 'Gamer Girl', 'x3p0-profile' ),
+                'viewportWidth' => 672
         ] );
 
         add_pattern( 'notes', [
-                'title' => __( 'Notes', 'x3p0-profile' )
+                'title' => __( 'Notes', 'x3p0-profile' ),
+                'viewportWidth' => 672
         ] );
 
         add_pattern( 'photo-info', [
-                'title' => __( 'Photo + Info', 'x3p0-profile' )
+                'title' => __( 'Photo + Info', 'x3p0-profile' ),
+                'viewportWidth' => 1056
         ] );
 } );
 
@@ -144,6 +153,7 @@ function add_pattern( string $slug, array $args = [] ) {
                 wp_parse_args( $args, [
                         'categories'    => [ 'x3p0-profile' ],
                         'blockTypes'    => [ 'core/template-part' ],
+                        'viewportWidth' => 1366,
                         'content'       => $content
                 ] )
         );
