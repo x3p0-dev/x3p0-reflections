@@ -16,6 +16,11 @@ class Styles {
                 ] );
 
                 register_block_style( 'core/social-links', [
+                        'name'  => 'circle-outline',
+                        'label' => __( 'Circle Outline', 'x3p0-profile' )
+                ] );
+
+                register_block_style( 'core/social-links', [
                         'name'  => 'rectangle',
                         'label' => __( 'Rectangle', 'x3p0-profile' )
                 ] );

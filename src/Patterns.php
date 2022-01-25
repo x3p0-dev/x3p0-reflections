@@ -37,6 +37,11 @@ class Patterns {
                         'title' => __( 'Notes in the Void', 'x3p0-profile' ),
                         'viewportWidth' => 672
                 ] );
+
+                $this->add( 'reflections', [
+                        'title' => __( 'Reflections', 'x3p0-profile' ),
+                        'viewportWidth' => 672
+                ] );
         }
 
         protected function pattern( string $slug = 'default' ) {

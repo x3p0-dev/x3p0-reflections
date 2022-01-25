@@ -39,6 +39,12 @@ hr + :where( h1, h2, h3, h4, h5, h6 ) {
  * -----------------------------------------------------------------------------
 **/
 
+/* When groups/container blocks with border-radius have something like an image
+   stretched across them, they cover the rounded corners. */
+[style*="border-radius"] {
+	overflow: hidden;
+}
+
 /* WP has no way to tie a line-height to a font-size. */
 .has-9-xl-font-size { line-height: var( --wp--custom--line-height--9-xl ); }
 .has-8-xl-font-size { line-height: var( --wp--custom--line-height--8-xl ); }

@@ -29,9 +29,18 @@
         padding-right: calc((2/3) * 1.25em);
 }
 
+.wp-block-social-links.is-style-circle-outline .wp-social-link {
+        border-radius: 9999em;
+}
+
 .wp-block-social-links.is-style-rectangle .wp-social-link,
 .wp-block-social-links.is-style-rectangle-outline .wp-social-link {
         border-radius: 0;
+}
+
+.wp-block-social-link-anchor,
+.wp-block-social-link button {
+        border-radius: inherit;
 }
 
 .wp-block-social-links[class*=is-style-rectangle] .wp-social-link a,
@@ -40,6 +49,8 @@
         padding-right: 1rem;
 }
 
+.wp-block-social-links.is-style-circle-outline .wp-social-link a,
+.wp-block-social-links.is-style-circle-outline .wp-social-link button,
 .wp-block-social-links.is-style-rectangle-outline .wp-social-link a,
 .wp-block-social-links.is-style-rectangle-outline .wp-social-link button {
         border: 1px solid currentColor;

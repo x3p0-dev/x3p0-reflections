@@ -14,3 +14,5 @@ A one-page user-profile WordPress theme.  Currently, it ships with a few pattern
         - [Photo by Gagan Deep Singh](https://wordpress.org/photos/photo/3761c41398/)
 - `patterns/notes-in-the-void.php`
         - [Photo by Anne McCarthy](https://wordpress.org/photos/photo/75561b91da/)
+- `patterns/reflections.php`
+        - [Photo by Anne McCarthy](https://wordpress.org/photos/photo/32661ecf00/)
