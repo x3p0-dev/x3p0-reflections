@@ -25,11 +25,11 @@ function theme( $abstract = '' ) {
 
 	if ( is_null( $bindings ) ) {
 		$bindings = [
-			Assets::class    => new Assets(),
-			Images::class    => new Images(),
-			Patterns::class  => new Patterns(),
-			Styles::class    => new Styles(),
-			Templates::class => new Templates()
+			Assets::class         => new Assets(),
+			BlockPatterns::class  => new BlockPatterns(),
+			BlockStyles::class    => new BlockStyles(),
+			BlockTemplates::class => new BlockTemplates(),
+			ImageSizes::class     => new ImageSizes()
 		];
 
 		foreach ( $bindings as $binding ) {

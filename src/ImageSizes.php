@@ -10,7 +10,7 @@
 
 namespace X3P0\Profile;
 
-class Images {
+class ImageSizes {
 
         /**
 	 * Bootstraps the class' actions/filters.

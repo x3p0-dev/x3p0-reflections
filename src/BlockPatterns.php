@@ -10,7 +10,7 @@
 
 namespace X3P0\Profile;
 
-class Patterns {
+class BlockPatterns {
 
         /**
 	 * Bootstraps the class' actions/filters.

@@ -10,7 +10,7 @@
 
 namespace X3P0\Profile;
 
-class Styles {
+class BlockStyles {
 
         /**
 	 * Bootstraps the class' actions/filters.

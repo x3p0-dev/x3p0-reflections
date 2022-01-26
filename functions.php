@@ -20,10 +20,10 @@ array_map( function( $file ) {
 	require_once( get_parent_theme_file_path( "src/{$file}.php" ) );
 }, [
         'Assets',
-        'Images',
-        'Patterns',
-        'Styles',
-        'Templates',
+        'BlockPatterns',
+        'BlockStyles',
+        'BlockTemplates',
+        'ImageSizes',
 	'functions-helpers'
 ] );
 

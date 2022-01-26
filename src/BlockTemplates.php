@@ -10,7 +10,7 @@
 
 namespace X3P0\Profile;
 
-class Templates {
+class BlockTemplates {
 
         /**
 	 * Bootstraps the class' actions/filters.
