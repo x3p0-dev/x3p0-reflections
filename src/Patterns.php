@@ -32,8 +32,15 @@ class Patterns {
 	 */
         public function register() {
 
-                register_block_pattern_category( 'x3p0-profile', [
-                        'label' => __( 'X3P0 - Profile', 'x3p0-profile' )
+                if ( function_exists( 'register_block_pattern_category_type' ) ) {
+                        register_block_pattern_category_type( 'x3p0-profile', [
+                                'label' => __( 'X3P0 - Profile', 'x3p0-profile' )
+                        ] );
+                }
+
+                register_block_pattern_category( 'x3p0-profile-cards', [
+                        'label'         => __( 'Profile Cards', 'x3p0-profile' ),
+                        'categoryTypes' => [ 'x3p0-profile' ]
                 ] );
 
                 $this->add( 'artist', [
@@ -83,7 +90,7 @@ class Patterns {
                 register_block_pattern(
                         "x3p0-profile/{$slug}",
                         wp_parse_args( $args, [
-                                'categories'    => [ 'x3p0-profile' ],
+                                'categories'    => [ 'x3p0-profile-cards' ],
                                 'blockTypes'    => [ 'core/template-part/content' ],
                                 'viewportWidth' => 672,
                                 'content'       => $content
