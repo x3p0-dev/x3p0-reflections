@@ -1,0 +1,9 @@
+.wp-block-quote cite {
+        display:  block;
+        margin-top: var( --wp--style--block-gap );
+        font-style: normal;
+}
+
+.wp-block-quote cite::before {
+        content: "\2014\000A0";
+}

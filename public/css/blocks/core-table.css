@@ -1,0 +1,17 @@
+.wp-block-table table > *,
+.wp-block-table table td,
+.wp-block-table table th,
+.wp-block-table table tr {
+        text-align: unset;
+        border-color: inherit;
+}
+
+.wp-block-table table thead,
+.wp-block-table table tfoot {
+        font-weight: 700;
+}
+
+.wp-block-table table td,
+.wp-block-table table th {
+        padding: var( --wp--custom--spacing--2 ) var( --wp--custom--spacing--4 );
+}

@@ -1,14 +1,36 @@
 <?php
+/**
+ * Image size handling.
+ *
+ * @author    Justin Tadlock <justintadlock@gmail.com>
+ * @copyright 2022 Justin Tadlock
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
+ * @link      https://github.com/x3p0-dev/x3p0-profile
+ */
 
 namespace X3P0\Profile;
 
 class Images {
 
+        /**
+	 * Bootstraps the class' actions/filters.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @return void
+	 */
         public function boot() {
                 add_action( 'init', [ $this, 'addImageSizes' ] );
                 add_filter( 'image_size_names_choose', [ $this, 'imageSizeNamesChoose' ] );
         }
 
+        /**
+	 * Registers custom image sizes.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @return void
+	 */
         public function addImageSizes() {
                 add_image_size( 'x3p0-profile-1x1-md',  640,  640, true );
                 add_image_size( 'x3p0-profile-1x1-lg', 1024, 1024, true );
@@ -35,6 +57,15 @@ class Images {
                 add_image_size( 'x3p0-profile-18x5-xl', 2048, 569,  true );
         }
 
+        /**
+	 * Filters the image size dropdown in the editor so our custom sizes
+         * appear for selection.
+	 *
+	 * @since  1.0.0
+	 * @access public
+         * @param  array  $sizes
+	 * @return array
+	 */
         public function imageSizeNamesChoose( $sizes ) {
                 $sizes[ 'x3p0-profile-1x1-md'] = __( 'Square - Medium', 'x3p0-profile' );
                 $sizes[ 'x3p0-profile-1x1-lg'] = __( 'Square - Large', 'x3p0-profile' );

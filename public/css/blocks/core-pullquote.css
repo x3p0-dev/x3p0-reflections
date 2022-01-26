@@ -1,0 +1,23 @@
+.wp-block-pullquote blockquote {
+        margin: 0;
+}
+
+.wp-block-pullquote blockquote p {
+        font-size: inherit;
+        line-height: inherit;
+}
+
+.wp-block-pullquote cite,
+.wp-block-pullquote__citation {
+        display: block;
+        margin-top: 1rem;
+        font-size: 0.75em;
+        font-weight: 400;
+        font-style: normal;
+        font-variant: small-caps;
+}
+
+.wp-block-pullquote cite::before,
+.wp-block-pullquote cite::before {
+        content: "\2014\000A0";
+}

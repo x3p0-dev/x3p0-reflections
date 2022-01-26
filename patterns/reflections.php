@@ -15,8 +15,8 @@
 <h1 class="has-text-align-center has-4-xl-font-size" id="jane-doe" style="font-style:normal;font-weight:300;letter-spacing:1px">Jane Doe</h1>
 <!-- /wp:heading -->
 
-<!-- wp:heading {"textAlign":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"300","textTransform":"uppercase"}},"fontSize":"sm"} -->
-<h2 class="has-text-align-center has-sm-font-size" id="maker-of-cool-things" style="font-style:normal;font-weight:300;text-transform:uppercase">Maker of Cool Things</h2>
+<!-- wp:heading {"textAlign":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"300","textTransform":"uppercase"},"spacing":{"margin":{"top":"0rem"}}},"fontSize":"sm"} -->
+<h2 class="has-text-align-center has-sm-font-size" id="maker-of-cool-things" style="font-style:normal;font-weight:300;margin-top:0rem;text-transform:uppercase">Maker of Cool Things</h2>
 <!-- /wp:heading -->
 
 <!-- wp:separator {"color":"neutral-200","className":"is-style-wide"} -->

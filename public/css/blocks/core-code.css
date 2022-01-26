@@ -1,0 +1,6 @@
+pre.wp-block-code > code {
+        overflow: auto;
+        word-wrap: normal;
+        /* wp only lets you set all sides of the border */
+        border-bottom-color: var( --wp--preset--color--neutral-400 );
+}

@@ -1,14 +1,37 @@
 <?php
+/**
+ * Block patterns handling.
+ *
+ * @author    Justin Tadlock <justintadlock@gmail.com>
+ * @copyright 2022 Justin Tadlock
+ * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
+ * @link      https://github.com/x3p0-dev/x3p0-profile
+ */
 
 namespace X3P0\Profile;
 
 class Patterns {
 
+        /**
+	 * Bootstraps the class' actions/filters.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @return void
+	 */
         public function boot() {
                 add_action( 'init', [ $this, 'register' ] );
         }
 
+        /**
+	 * Registers custom block patterns and categories.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @return void
+	 */
         public function register() {
+
                 register_block_pattern_category( 'x3p0-profile', [
                         'label' => __( 'X3P0 - Profile', 'x3p0-profile' )
                 ] );
@@ -44,25 +67,45 @@ class Patterns {
                 ] );
         }
 
-        protected function pattern( string $slug = 'default' ) {
-                ob_start();
-                include( get_theme_file_path( "patterns/{$slug}.php" ) );
-                $pattern = ob_get_contents();
-                ob_end_clean();
-
-                return $pattern;
-        }
-
+        /**
+         * Registers a block pattern.
+         *
+         * @since  1.0.0
+         * @access public
+         * @param  string  $slug
+         * @param  array   $args
+         * @return void
+         */
         protected function add( string $slug, array $args = [] ) {
-                $content = $args['content'] ?? $this->pattern( $slug );
+
+                $content = $args['content'] ?? $this->patternContent( $slug );
+
                 register_block_pattern(
                         "x3p0-profile/{$slug}",
                         wp_parse_args( $args, [
                                 'categories'    => [ 'x3p0-profile' ],
-                                'blockTypes'    => [ 'core/template-part' ],
-                                'viewportWidth' => 1366,
+                                'blockTypes'    => [ 'core/template-part/content' ],
+                                'viewportWidth' => 672,
                                 'content'       => $content
                         ] )
                 );
+        }
+
+        /**
+	 * Returns a pattern file's content.
+	 *
+	 * @since  1.0.0
+	 * @access public
+         * @param  string  $slug
+	 * @return void
+	 */
+        protected function patternContent( string $slug ) {
+
+                ob_start();
+                include( get_theme_file_path( "patterns/{$slug}.php" ) );
+                $content = ob_get_contents();
+                ob_end_clean();
+
+                return $content;
         }
 }

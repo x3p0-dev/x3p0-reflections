@@ -33,11 +33,27 @@ hr + :where( h1, h2, h3, h4, h5, h6 ) {
 	margin-top: var( --wp--custom--spacing--global );
 }
 
+figcaption {
+	display:       block;
+	margin-top:    var( --wp--custom--spacing--2 );
+	margin-bottom: 0;
+	text-align:    center;
+	padding:       0 var( --wp--custom--spacing--global );
+	color:         var( --wp--preset--color--neutral-600 );
+	font-family:   var( --wp--preset--font-family--secondary );
+	font-size:     var( --wp--preset--font-size--base );
+	line-height:   var( --wp--custom--line-height--base );
+}
+
 /**
  * -----------------------------------------------------------------------------
  * Utilities.
  * -----------------------------------------------------------------------------
 **/
+
+:first-child {
+        margin-top: 0;
+}
 
 /* When groups/container blocks with border-radius have something like an image
    stretched across them, they cover the rounded corners. */
@@ -46,16 +62,68 @@ hr + :where( h1, h2, h3, h4, h5, h6 ) {
 }
 
 /* WP has no way to tie a line-height to a font-size. */
-.has-9-xl-font-size { line-height: var( --wp--custom--line-height--9-xl ); }
-.has-8-xl-font-size { line-height: var( --wp--custom--line-height--8-xl ); }
-.has-7-xl-font-size { line-height: var( --wp--custom--line-height--7-xl ); }
-.has-6-xl-font-size { line-height: var( --wp--custom--line-height--6-xl ); }
-.has-5-xl-font-size { line-height: var( --wp--custom--line-height--5-xl ); }
-.has-4-xl-font-size { line-height: var( --wp--custom--line-height--4-xl ); }
-.has-3-xl-font-size { line-height: var( --wp--custom--line-height--3-xl ); }
-.has-2-xl-font-size { line-height: var( --wp--custom--line-height--2-xl ); }
-.has-xl-font-size   { line-height: var( --wp--custom--line-height--xl ); }
-.has-lg-font-size   { line-height: var( --wp--custom--line-height--lg ); }
-.has-base-font-size { line-height: var( --wp--custom--line-height--base ); }
-.has-sm-font-size   { line-height: var( --wp--custom--line-height--sm ); }
-.has-xs-font-size   { line-height: var( --wp--custom--line-height--xs ); }
+.has-9-xl-font-size { line-height: var( --wp--custom--wp--custom--line-height--9-xl ); }
+.has-8-xl-font-size { line-height: var( --wp--custom--wp--custom--line-height--8-xl ); }
+.has-7-xl-font-size { line-height: var( --wp--custom--wp--custom--line-height--7-xl ); }
+.has-6-xl-font-size { line-height: var( --wp--custom--wp--custom--line-height--6-xl ); }
+.has-5-xl-font-size { line-height: var( --wp--custom--wp--custom--line-height--5-xl ); }
+.has-4-xl-font-size { line-height: var( --wp--custom--wp--custom--line-height--4-xl ); }
+.has-3-xl-font-size { line-height: var( --wp--custom--wp--custom--line-height--3-xl ); }
+.has-2-xl-font-size { line-height: var( --wp--custom--wp--custom--line-height--2-xl ); }
+.has-xl-font-size   { line-height: var( --wp--custom--wp--custom--line-height--xl ); }
+.has-lg-font-size   { line-height: var( --wp--custom--wp--custom--line-height--lg ); }
+.has-base-font-size { line-height: var( --wp--custom--wp--custom--line-height--base ); }
+.has-sm-font-size   { line-height: var( --wp--custom--wp--custom--line-height--sm ); }
+.has-xs-font-size   { line-height: var( --wp--custom--wp--custom--line-height--xs ); }
+
+@media ( max-width: 1280px ) {
+	:root body {
+		--wp--preset--font-size--9-xl: 7rem;
+		--wp--preset--font-size--8-xl: 5rem;
+	}
+}
+
+@media ( max-width: 1024px ) {
+	:root body {
+		--wp--preset--font-size--9-xl: 6rem;
+		--wp--preset--font-size--8-xl: 4.5rem;
+		--wp--preset--font-size--7-xl: 4rem;
+		--wp--preset--font-size--6-xl: 3.5rem;
+	}
+}
+
+@media ( max-width: 768px ) {
+	:root body {
+		--wp--preset--font-size--9-xl: 4.5rem;
+		--wp--preset--font-size--8-xl: 4rem;
+		--wp--preset--font-size--7-xl: 3.5rem;
+		--wp--preset--font-size--6-xl: 3rem;
+		--wp--preset--font-size--5-xl: 2.5rem;
+
+		--wp--custom--line-height--5-xl: 2.75rem;
+	}
+}
+
+@media ( max-width: 640px ) {
+	:root body {
+		--wp--preset--font-size--9-xl: 2.75rem;
+		--wp--preset--font-size--8-xl: 2.5rem;
+		--wp--preset--font-size--7-xl: 2.25rem;
+		--wp--preset--font-size--6-xl: 2rem;
+		--wp--preset--font-size--5-xl: 1.75rem;
+		--wp--preset--font-size--4-xl: 1.5rem;
+		--wp--preset--font-size--3-xl: 1.375rem;
+		--wp--preset--font-size--2-xl: 1.25rem;
+		--wp--preset--font-size--xl:   1.1875rem;
+
+		--wp--custom--line-height--9-xl: 3rem;
+		--wp--custom--line-height--8-xl: 2.75rem;
+		--wp--custom--line-height--7-xl: 2.5rem;
+		--wp--custom--line-height--6-xl: 1;
+		--wp--custom--line-height--5-xl: 2rem;
+		--wp--custom--line-height--4-xl: 2rem;
+		--wp--custom--line-height--3-xl: 1.75rem;
+		--wp--custom--line-height--2-xl: 1.75rem;
+		--wp--custom--line-height--xl:   1.75rem;
+	}
+}
