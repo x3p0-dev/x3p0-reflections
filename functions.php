@@ -19,6 +19,7 @@ namespace X3P0\Profile;
 array_map( function( $file ) {
 	require_once( get_parent_theme_file_path( "src/{$file}.php" ) );
 }, [
+	'Contracts\Bootable',
         'Assets',
         'BlockPatterns',
         'BlockStyles',

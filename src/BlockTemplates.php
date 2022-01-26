@@ -10,7 +10,9 @@
 
 namespace X3P0\Profile;
 
-class BlockTemplates {
+use X3P0\Profile\Contracts\Bootable;
+
+class BlockTemplates implements Bootable {
 
         /**
 	 * Bootstraps the class' actions/filters.

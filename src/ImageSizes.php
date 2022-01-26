@@ -10,7 +10,9 @@
 
 namespace X3P0\Profile;
 
-class ImageSizes {
+use X3P0\Profile\Contracts\Bootable;
+
+class ImageSizes implements Bootable {
 
         /**
 	 * Bootstraps the class' actions/filters.

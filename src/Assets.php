@@ -10,7 +10,9 @@
 
 namespace X3P0\Profile;
 
-class Assets {
+use X3P0\Profile\Contracts\Bootable;
+
+class Assets implements Bootable {
 
         /**
 	 * Bootstraps the class' actions/filters.
