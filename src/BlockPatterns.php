@@ -109,12 +109,8 @@ class BlockPatterns implements Bootable {
 	 * @return void
 	 */
         protected function patternContent( string $slug ) {
-
                 ob_start();
-                include( get_theme_file_path( "patterns/{$slug}.php" ) );
-                $content = ob_get_contents();
-                ob_end_clean();
-
-                return $content;
+                include get_theme_file_path( "patterns/{$slug}.php" );
+                return ob_get_clean();
         }
 }
