@@ -412,6 +412,11 @@
                                 "typography": {
                                         "lineHeight": true
                                 }
+                        },
+                        "core/site-title": {
+                                "typography": {
+                                        "lineHeight": true
+                                }
                         }
                 }
         },

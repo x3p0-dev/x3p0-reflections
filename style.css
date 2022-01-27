@@ -62,19 +62,19 @@ figcaption {
 }
 
 /* WP has no way to tie a line-height to a font-size. */
-.has-9-xl-font-size { line-height: var( --wp--custom--wp--custom--line-height--9-xl ); }
-.has-8-xl-font-size { line-height: var( --wp--custom--wp--custom--line-height--8-xl ); }
-.has-7-xl-font-size { line-height: var( --wp--custom--wp--custom--line-height--7-xl ); }
-.has-6-xl-font-size { line-height: var( --wp--custom--wp--custom--line-height--6-xl ); }
-.has-5-xl-font-size { line-height: var( --wp--custom--wp--custom--line-height--5-xl ); }
-.has-4-xl-font-size { line-height: var( --wp--custom--wp--custom--line-height--4-xl ); }
-.has-3-xl-font-size { line-height: var( --wp--custom--wp--custom--line-height--3-xl ); }
-.has-2-xl-font-size { line-height: var( --wp--custom--wp--custom--line-height--2-xl ); }
-.has-xl-font-size   { line-height: var( --wp--custom--wp--custom--line-height--xl ); }
-.has-lg-font-size   { line-height: var( --wp--custom--wp--custom--line-height--lg ); }
-.has-base-font-size { line-height: var( --wp--custom--wp--custom--line-height--base ); }
-.has-sm-font-size   { line-height: var( --wp--custom--wp--custom--line-height--sm ); }
-.has-xs-font-size   { line-height: var( --wp--custom--wp--custom--line-height--xs ); }
+.has-9-xl-font-size { line-height: var( --wp--custom--line-height--9-xl ); }
+.has-8-xl-font-size { line-height: var( --wp--custom--line-height--8-xl ); }
+.has-7-xl-font-size { line-height: var( --wp--custom--line-height--7-xl ); }
+.has-6-xl-font-size { line-height: var( --wp--custom--line-height--6-xl ); }
+.has-5-xl-font-size { line-height: var( --wp--custom--line-height--5-xl ); }
+.has-4-xl-font-size { line-height: var( --wp--custom--line-height--4-xl ); }
+.has-3-xl-font-size { line-height: var( --wp--custom--line-height--3-xl ); }
+.has-2-xl-font-size { line-height: var( --wp--custom--line-height--2-xl ); }
+.has-xl-font-size   { line-height: var( --wp--custom--line-height--xl ); }
+.has-lg-font-size   { line-height: var( --wp--custom--line-height--lg ); }
+.has-base-font-size { line-height: var( --wp--custom--line-height--base ); }
+.has-sm-font-size   { line-height: var( --wp--custom--line-height--sm ); }
+.has-xs-font-size   { line-height: var( --wp--custom--line-height--xs ); }
 
 @media ( max-width: 1280px ) {
 	:root body {

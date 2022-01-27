@@ -3,3 +3,7 @@
 .wp-block-button__link:focus {
         text-decoration: underline;
 }
+
+.is-style-outline > :where( .wp-block-button__link ) {
+        border-width: 1px;
+}
