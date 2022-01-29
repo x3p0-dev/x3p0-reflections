@@ -15,6 +15,24 @@
 
 /**
  * -----------------------------------------------------------------------------
+ * Elements
+ * -----------------------------------------------------------------------------
+**/
+
+figcaption {
+	display:       block;
+	margin-top:    var( --wp--custom--spacing--2 );
+	margin-bottom: 0;
+	text-align:    center;
+	padding:       0 var( --wp--custom--spacing--global );
+	color:         var( --wp--preset--color--neutral-600 );
+	font-family:   var( --wp--preset--font-family--secondary );
+	font-size:     var( --wp--preset--font-size--base );
+	line-height:   var( --wp--custom--line-height--base );
+}
+
+/**
+ * -----------------------------------------------------------------------------
  * Block: Heading
  * -----------------------------------------------------------------------------
 **/
