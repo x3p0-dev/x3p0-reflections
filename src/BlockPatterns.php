@@ -33,15 +33,17 @@ class BlockPatterns implements Bootable {
 	 * @return void
 	 */
         public function register() {
+                $label = __( 'X3P0: %s', 'x3p0-profile' );
 
                 if ( function_exists( 'register_block_pattern_category_type' ) ) {
+                        $label = '%s';
                         register_block_pattern_category_type( 'x3p0-profile', [
-                                'label' => __( 'X3P0 - Profile', 'x3p0-profile' )
+                                'label' => __( 'X3P0', 'x3p0-profile' )
                         ] );
                 }
 
                 register_block_pattern_category( 'x3p0-profile-cards', [
-                        'label'         => __( 'Profile Cards', 'x3p0-profile' ),
+                        'label'         => sprintf( $label, __( 'Cards', 'x3p0-profile' ) ),
                         'categoryTypes' => [ 'x3p0-profile' ]
                 ] );
 
