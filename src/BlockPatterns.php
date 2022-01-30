@@ -67,6 +67,16 @@ class BlockPatterns implements Bootable {
                         'viewportWidth' => 672
                 ] );
 
+                $this->add( 'mondays', [
+                        'title' => __( 'Mondays', 'x3p0-profile' ),
+                        'viewportWidth' => 1056
+                ] );
+
+                $this->add( 'mountain-field', [
+                        'title' => __( 'Mountain Field', 'x3p0-profile' ),
+                        'viewportWidth' => 672
+                ] );
+
                 $this->add( 'notes-in-the-void', [
                         'title' => __( 'Notes in the Void', 'x3p0-profile' ),
                         'viewportWidth' => 672

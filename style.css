@@ -38,17 +38,11 @@ figcaption {
 **/
 
 :where( h1, h2, h3, h4, h5, h6 ) + * {
-        margin-top: var( --wp--custom--spacing--4 );
+	--wp--custom--spacing--global: var( --wp--custom--spacing--4 );
 }
 
 :where( h1, h2, h3, h4, h5, h6 ) + :where( h2, h3, h4, h5 ) {
-        margin-top: var( --wp--custom--spacing--2 );
-        --wp--style--block-gap: var( --wp--custom--spacing--2 );
-}
-
-.wp-block-spacer + :where( h1, h2, h3, h4, h5, h6 ),
-hr + :where( h1, h2, h3, h4, h5, h6 ) {
-	margin-top: var( --wp--custom--spacing--global );
+	--wp--custom--spacing--global: var( --wp--custom--spacing--2 );
 }
 
 /**

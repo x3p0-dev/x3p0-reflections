@@ -451,7 +451,7 @@
                         },
         		"h1": {
                                 "spacing": {
-                                        "margin":"var( --wp--custom--spacing--12 ) 0 0"
+                                        "margin":"var( --wp--custom--spacing-global ) 0 0"
                                 },
         			"typography": {
         				"fontFamily": "var( --wp--preset--font-family--headings )",
@@ -461,7 +461,7 @@
         		},
                         "h2": {
                                 "spacing": {
-                                        "margin":"var( --wp--custom--spacing--12 ) 0 0"
+                                        "margin":"var( --wp--custom--spacing-global ) 0 0"
                                 },
                                 "typography": {
                                         "fontFamily": "var( --wp--preset--font-family--headings )",
@@ -471,7 +471,7 @@
                         },
                         "h3": {
                                 "spacing": {
-                                        "margin":"var( --wp--custom--spacing--12 ) 0 0"
+                                        "margin":"var( --wp--custom--spacing-global ) 0 0"
                                 },
                                 "typography": {
                                         "fontFamily": "var( --wp--preset--font-family--headings )",
@@ -481,7 +481,7 @@
                         },
                         "h4": {
                                 "spacing": {
-                                        "margin":"var( --wp--custom--spacing--12 ) 0 0"
+                                        "margin":"var( --wp--custom--spacing-global ) 0 0"
                                 },
                                 "typography": {
                                         "fontFamily": "var( --wp--preset--font-family--headings )",
@@ -491,7 +491,7 @@
                         },
                         "h5": {
                                 "spacing": {
-                                        "margin":"var( --wp--custom--spacing--12 ) 0 0"
+                                        "margin":"var( --wp--custom--spacing-global ) 0 0"
                                 },
                                 "typography": {
                                         "fontFamily": "var( --wp--preset--font-family--headings )",
@@ -501,7 +501,7 @@
                         },
                         "h6": {
                                 "spacing": {
-                                        "margin":"var( --wp--custom--spacing--12 ) 0 0"
+                                        "margin":"var( --wp--custom--spacing-global ) 0 0"
                                 },
                                 "typography": {
                                         "fontFamily": "var( --wp--preset--font-family--headings )",
@@ -570,6 +570,16 @@
                                         "padding": "var( --wp--custom--spacing--8 )"
                                 }
                         },
+			"core/list": {
+                                "spacing": {
+                                        "margin":"var( --wp--custom--spacing--global ) 0 0"
+                                }
+			},
+			"core/paragraph": {
+                                "spacing": {
+                                        "margin":"var( --wp--custom--spacing--global ) 0 0"
+                                }
+			},
                         "core/pullquote": {
                                 "color": {
                                         "background": "var( --wp--preset--color--neutral-100 )"
@@ -640,6 +650,16 @@
                         "area": "content",
                         "title": "Gamer"
                 },
+		{
+			"name": "mondays",
+			"area": "content",
+			"title": "Mondays"
+		},
+		{
+			"name": "mountain-field",
+			"area": "content",
+			"title": "Mountain Field"
+		},
                 {
                         "name": "notes-in-the-void",
                         "area": "content",

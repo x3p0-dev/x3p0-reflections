@@ -14,8 +14,8 @@
 
 <!-- wp:site-title {"textAlign":"center","style":{"typography":{"textTransform":"uppercase"},"elements":{"link":{"color":{"text":"var:preset|color|neutral-900"}}}},"textColor":"black","fontSize":"2xl"} /-->
 
-<!-- wp:social-links {"iconColor":"white","iconColorValue":"#ffffff","iconBackgroundColor":"neutral-700","iconBackgroundColorValue":"#4a5568","size":"has-normal-icon-size","className":"is-style-default","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{}}} -->
-<ul class="wp-block-social-links has-normal-icon-size has-icon-color has-icon-background-color is-style-default"><!-- wp:social-link {"url":"#","service":"linkedin"} /-->
+<!-- wp:social-links {"iconColor":"white","iconColorValue":"#ffffff","iconBackgroundColor":"neutral-700","iconBackgroundColorValue":"#4a5568","size":"has-normal-icon-size","className":"is-style-round","layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{}}} -->
+<ul class="wp-block-social-links has-normal-icon-size has-icon-color has-icon-background-color is-style-round"><!-- wp:social-link {"url":"#","service":"linkedin"} /-->
 
 <!-- wp:social-link {"url":"#","service":"mail"} /-->
 
