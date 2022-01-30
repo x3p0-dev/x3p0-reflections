@@ -1,0 +1,32 @@
+.wp-block-image figcaption {
+	margin-top:    var( --wp--custom--spacing--2 );
+	margin-bottom: 0;
+}
+
+.wp-block-image.is-style-polaroid,
+.wp-block-image.is-style-polaroid-tilt-right,
+.wp-block-image.is-style-polaroid-tilt-left {
+	padding:          var( --wp--custom--spacing--4 );
+	background-color: var( --wp--preset--color--white );
+	box-shadow:       var( --wp--custom--shadow--md );
+	transition: all 0.5s ease-in-out;
+}
+
+.wp-block-image[class*=is-style-polaroid] figcaption {
+	margin-top: var( --wp--custom--spacing--4 );
+	font-family: var( --wp--preset--font-family--cursive );
+	color: var( --wp--preset--color--neutral-700 );
+}
+
+.wp-block-image.is-style-polaroid-tilt-right {
+	transform: scale( 0.99, 0.99 ) rotate( 2deg );
+}
+
+.wp-block-image.is-style-polaroid-tilt-left {
+	transform: scale( 0.99, 0.99 ) rotate( -2deg );
+}
+
+.wp-block-image.is-style-polaroid-tilt-right:hover,
+.wp-block-image.is-style-polaroid-tilt-left:hover {
+	transform: scale( 1, 1 ) rotate( 0 );
+}

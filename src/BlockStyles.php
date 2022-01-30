@@ -34,6 +34,21 @@ class BlockStyles implements Bootable {
 	 */
         public function register() {
 
+		register_block_style( 'core/image', [
+			'name' => 'polaroid',
+			'label' => __( 'Polaroid', 'x3p0-profile' )
+		] );
+
+		register_block_style( 'core/image', [
+			'name' => 'polaroid-tilt-left',
+			'label' => __( 'Polaroid: Tilt Left', 'x3p0-profile' )
+		] );
+
+		register_block_style( 'core/image', [
+			'name' => 'polaroid-tilt-right',
+			'label' => __( 'Polaroid: Tilt Right', 'x3p0-profile' )
+		] );
+
                 register_block_style( 'core/list', [
                         'name' => 'padded',
                         'label' => __( 'Padded', 'x3p0-profile' )
@@ -53,5 +68,15 @@ class BlockStyles implements Bootable {
                         'name'  => 'rectangle-outline',
                         'label' => __( 'Rectangle Outline', 'x3p0-profile' )
                 ] );
+
+		register_block_style( 'core/social-links', [
+			'name'  => 'square',
+			'label' => __( 'Square', 'x3p0-profile' )
+		] );
+
+		register_block_style( 'core/social-links', [
+			'name'  => 'square-outline',
+			'label' => __( 'Square Outline', 'x3p0-profile' )
+		] );
         }
 }
