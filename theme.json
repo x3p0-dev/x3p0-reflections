@@ -189,6 +189,15 @@
                                 "sm": "1.5rem",
                                 "xs": "1.25rem"
                         },
+			"shadow": {
+				"none": "none",
+				"sm": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+				"md": "0 4px  10px 0 rgba( 0, 0, 0, 0.3 )",
+				"lg": "0 8px  15px 0 rgba( 0, 0, 0, 0.3 )",
+				"xl": "0 12px 20px 0 rgba( 0, 0, 0, 0.3 )",
+				"inner": "inset 0 2px 4px 0 rgba( 0, 0, 0, 0.06 )",
+				"outline": "0 0 0 3px rgba( 66, 153, 225, 0.5 )"
+			},
                         "spacing": {
                                 "0": "0",
                                 "1": "calc( var( --wp--custom--base--spacing ) * 1 )",
@@ -457,7 +466,7 @@
                                 "typography": {
                                         "fontFamily": "var( --wp--preset--font-family--headings )",
                                         "fontSize": "var( --wp--preset--font-size--4-xl )",
-                                        "lineHeight": "var( --line-height--4-xl)"
+                                        "lineHeight": "var( --wp--custom--line-height--4-xl)"
                                 }
                         },
                         "h3": {
@@ -477,7 +486,7 @@
                                 "typography": {
                                         "fontFamily": "var( --wp--preset--font-family--headings )",
                                         "fontSize": "var( --wp--preset--font-size--2-xl )",
-                                        "lineHeight": "var( --wp--custom--line-height--base--2-xl )"
+                                        "lineHeight": "var( --wp--custom--line-height--2-xl )"
                                 }
                         },
                         "h5": {
