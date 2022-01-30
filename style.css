@@ -19,30 +19,34 @@
  * -----------------------------------------------------------------------------
 **/
 
-figcaption {
-	display:       block;
-	margin-top:    var( --wp--custom--spacing--2 );
-	margin-bottom: 0;
-	text-align:    center;
-	padding:       0 var( --wp--custom--spacing--global );
-	color:         var( --wp--preset--color--neutral-600 );
-	font-family:   var( --wp--preset--font-family--secondary );
-	font-size:     var( --wp--preset--font-size--base );
-	line-height:   var( --wp--custom--line-height--base );
+/* Headings */
+* + :where( h1, h2, h3, h4, h5, h6 ) {
+	--wp--style--block-gap: var( --wp--custom--spacing--12 );
 }
-
-/**
- * -----------------------------------------------------------------------------
- * Block: Heading
- * -----------------------------------------------------------------------------
-**/
 
 :where( h1, h2, h3, h4, h5, h6 ) + * {
-	--wp--custom--spacing--global: var( --wp--custom--spacing--4 );
+        --wp--style--block-gap: var( --wp--custom--spacing--4 );
 }
 
-:where( h1, h2, h3, h4, h5, h6 ) + :where( h2, h3, h4, h5 ) {
-	--wp--custom--spacing--global: var( --wp--custom--spacing--2 );
+:where( h1, h2, h3, h4, h5, h6 ) + :where( h2, h3, h4, h5, h6 ) {
+        --wp--style--block-gap: var( --wp--custom--spacing--2 );
+}
+
+:where( hr, .wp-block-spacer ) + :where( h1, h2, h3, h4, h5, h6 ),
+:where( h1, h2, h3, h4, h5, h6 ) + :where( hr, .wp-block-spacer ) {
+	--wp--style--block-gap: var( --wp--custom--spacing--global );
+}
+
+/* Captions */
+figcaption {
+	display:     block;
+	margin:      var( --wp--custom--spacing--2 ) 0 0;
+	padding:     0 var( --wp--custom--spacing--global );
+	font-family: var( --wp--preset--font-family--secondary );
+	font-size:   var( --wp--preset--font-size--base );
+	line-height: var( --wp--custom--line-height--base );
+	color:       var( --wp--preset--color--neutral-600 );
+	text-align:  center;
 }
 
 /**
