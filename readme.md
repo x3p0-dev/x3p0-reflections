@@ -4,21 +4,13 @@ A one-page user-profile WordPress theme.  Currently, it ships with a few pattern
 
 ## Credits
 
-- `patterns/artist.php`
-        - [Photo by Martin Sauter](https://wordpress.org/photos/photo/57661e915c/)
-- `patterns/chiemsee.php`
-        - [Photo by Anariel Design](https://wordpress.org/photos/photo/22261bc467/)
-- `patterns/felix.php`
-        - [Photo by cogdog](https://wordpress.org/photos/photo/46561c16fc/)
-- `patterns/gamer.php`
-        - [Photo by Gagan Deep Singh](https://wordpress.org/photos/photo/3761c41398/)
-- `patterns/mondays.php`
-	- [Photo by Jennifer Bourn](https://wordpress.org/photos/photo/64561f098e/)
-- `patterns/mountain-field.php`
-	- [Photo by Martin Sauter](https://wordpress.org/photos/photo/68861c6da0/)
-- `patterns/notes-in-the-void.php`
-        - [Photo by Anne McCarthy](https://wordpress.org/photos/photo/75561b91da/)
-- `patterns/reeds.php`
-	- [Photo by Carolina Nymark](https://wordpress.org/photos/photo/58261f395b/)
-- `patterns/reflections.php`
-        - [Photo by Anne McCarthy](https://wordpress.org/photos/photo/32661ecf00/)
+- `public/img/patterns/artist.jpg`: [Photo by Martin Sauter](https://wordpress.org/photos/photo/57661e915c/)
+- `public/img/patterns/chiemsee.jpg`: [Photo by Anariel Design](https://wordpress.org/photos/photo/22261bc467/)
+- `public/img/patterns/felix.jpg`: [Photo by cogdog](https://wordpress.org/photos/photo/46561c16fc/)
+- `public/img/patterns/gamer.jpg`: [Photo by Gagan Deep Singh](https://wordpress.org/photos/photo/3761c41398/)
+- `public/img/patterns/mondays.jpg`: [Photo by Jennifer Bourn](https://wordpress.org/photos/photo/64561f098e/)
+- `public/img/patterns/mountain-field.jpg`: [Photo by Martin Sauter](https://wordpress.org/photos/photo/68861c6da0/)
+- `public/img/patterns/night-sky.jpg`: [Photo by Jeff Golenski](https://wordpress.org/photos/photo/92361d465c/)
+- `public/img/patterns/notes-in-the-void.jpg`: [Photo by Anne McCarthy](https://wordpress.org/photos/photo/75561b91da/)
+- `public/img/patterns/reeds.jpg`: [Photo by Carolina Nymark](https://wordpress.org/photos/photo/58261f395b/)
+- `public/img/patterns/reflections.jpg`: [Photo by Anne McCarthy](https://wordpress.org/photos/photo/32661ecf00/)

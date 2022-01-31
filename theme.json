@@ -632,6 +632,11 @@
 			"area": "content",
 			"title": "Mountain Field"
 		},
+		{
+			"name": "night-sky",
+			"area": "content",
+			"title": "Night Sky"
+		},
                 {
                         "name": "notes-in-the-void",
                         "area": "content",
