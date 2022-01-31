@@ -1,5 +1,3 @@
-
-ul.is-style-padded li + li,
-ol.is-style-padded li + li {
+.is-style-padded:where( ul, ol ) li + li {
         margin-top: var( --wp--custom--spacing--2 );
 }

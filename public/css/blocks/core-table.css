@@ -1,17 +1,12 @@
-.wp-block-table table > *,
-.wp-block-table table td,
-.wp-block-table table th,
-.wp-block-table table tr {
+.wp-block-table table :where( > *, tr, th, td ) {
         text-align: unset;
         border-color: inherit;
 }
 
-.wp-block-table table thead,
-.wp-block-table table tfoot {
+.wp-block-table table :where( thead, tfoot ) {
         font-weight: 700;
 }
 
-.wp-block-table table td,
-.wp-block-table table th {
+.wp-block-table table :where( th, td ) {
         padding: var( --wp--custom--spacing--2 ) var( --wp--custom--spacing--4 );
 }

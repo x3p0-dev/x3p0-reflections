@@ -3,9 +3,7 @@
 	margin-bottom: 0;
 }
 
-.wp-block-image.is-style-polaroid,
-.wp-block-image.is-style-polaroid-tilt-right,
-.wp-block-image.is-style-polaroid-tilt-left {
+.wp-block-image[class*=is-style-polaroid] {
 	padding:          var( --wp--custom--spacing--4 );
 	background-color: var( --wp--preset--color--white );
 	box-shadow:       var( --wp--custom--shadow--md );
@@ -26,7 +24,6 @@
 	transform: scale( 0.99, 0.99 ) rotate( -2deg );
 }
 
-.wp-block-image.is-style-polaroid-tilt-right:hover,
-.wp-block-image.is-style-polaroid-tilt-left:hover {
+.wp-block-image[class*=is-style-polaroid-tilt]:hover {
 	transform: scale( 1, 1 ) rotate( 0 );
 }

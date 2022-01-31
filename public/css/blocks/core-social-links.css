@@ -79,8 +79,7 @@
 	margin: 0;
 }
 
-.wp-block-social-link-anchor:hover .wp-block-social-link-label,
-.wp-block-social-link-anchor:focus .wp-block-social-link-label {
+.wp-block-social-link-anchor:where( :hover, :focus ) .wp-block-social-link-label {
 	text-decoration: underline;
 }
 
@@ -96,7 +95,6 @@
         border-radius: inherit;
 }
 
-.wp-block-social-links[class*=-outline] .wp-social-link a,
-.wp-block-social-links[class*=-outline] .wp-social-link button {
+.wp-block-social-links[class*=-outline] .wp-social-link :where( a, button ) {
         border: 1px solid currentColor;
 }
