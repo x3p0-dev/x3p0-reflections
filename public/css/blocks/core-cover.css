@@ -1,0 +1,3 @@
+.admin-bar .wp-block-cover[style*=min-height\:100vh] {
+	min-height: calc( 100vh - var( --wp-admin--admin-bar--height ) ) !important;
+}
