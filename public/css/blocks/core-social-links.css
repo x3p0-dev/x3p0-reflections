@@ -1,8 +1,3 @@
-.wp-block-social-links {
-        /* theme.json blockGap gets overwritten inside of Group */
-        --wp--style--block-gap: var( --wp--custom--spacing--6 );
-}
-
 .wp-block-social-links.has-small-icon-size {
         font-size: var( --wp--preset--font-size--lg );
 }
@@ -95,6 +90,6 @@
         border-radius: inherit;
 }
 
-.wp-block-social-links[class*=-outline] .wp-social-link :where( a, button ) {
+.wp-block-social-links[class*=-outline] .wp-social-link :is( a, a:hover, button ) {
         border: 1px solid currentColor;
 }
