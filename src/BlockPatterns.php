@@ -82,6 +82,11 @@ class BlockPatterns implements Bootable {
                         'viewportWidth' => 672
                 ] );
 
+                $this->add( 'reeds', [
+                        'title' => __( 'Reeds', 'x3p0-profile' ),
+                        'viewportWidth' => 1376
+                ] );
+
                 $this->add( 'reflections', [
                         'title' => __( 'Reflections', 'x3p0-profile' ),
                         'viewportWidth' => 672

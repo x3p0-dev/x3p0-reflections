@@ -18,5 +18,7 @@ A one-page user-profile WordPress theme.  Currently, it ships with a few pattern
 	- [Photo by Martin Sauter](https://wordpress.org/photos/photo/68861c6da0/)
 - `patterns/notes-in-the-void.php`
         - [Photo by Anne McCarthy](https://wordpress.org/photos/photo/75561b91da/)
+- `patterns/reeds.php`
+	- [Photo by Carolina Nymark](https://wordpress.org/photos/photo/58261f395b/)
 - `patterns/reflections.php`
         - [Photo by Anne McCarthy](https://wordpress.org/photos/photo/32661ecf00/)
