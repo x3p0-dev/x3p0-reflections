@@ -34,4 +34,4 @@ array_map( function( $file ) {
 #
 # Just runs a small bootstrapping routine.
 
-theme();
+do_action( 'x3p0/profile/booted', theme() );
