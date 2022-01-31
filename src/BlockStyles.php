@@ -54,6 +54,13 @@ class BlockStyles implements Bootable {
                         'label' => __( 'Padded', 'x3p0-profile' )
                 ] );
 
+		// Media & Text.
+
+                register_block_style( 'core/media-text', [
+                        'name' => 'full-height',
+                        'label' => __( 'Full Height', 'x3p0-profile' )
+                ] );
+
 		// Social Links.
 
 		register_block_style( 'core/social-links', [

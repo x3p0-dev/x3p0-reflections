@@ -4,3 +4,7 @@
 .wp-block-media-text__content {
         box-sizing: border-box;
 }
+
+.wp-block-media-text.is-style-full-height {
+	min-height: 100vh;
+}
