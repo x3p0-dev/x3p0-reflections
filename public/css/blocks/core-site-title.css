@@ -3,3 +3,15 @@
 .wp-block-site-title a:focus {
         text-decoration: underline;
 }
+
+.wp-block-site-title.is-style-bg-clip-text,
+.editor-styles-wrapper .wp-block-site-title.is-style-bg-clip-text {
+	padding: 0;
+	background-clip: text !important;
+	-webkit-background-clip: text !important;
+	color: transparent !important;
+}
+
+.wp-block-site-title.is-style-bg-clip-text > :where( a, span ) {
+	color: transparent !important;
+}

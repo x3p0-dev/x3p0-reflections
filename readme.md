@@ -2,7 +2,13 @@
 
 A one-page user-profile WordPress theme.  Currently, it ships with a few patterns.  More will be added.
 
+## Recommended
+
+This theme is designed to work with WordPress 5.9+.  However, it also closely follows the development of the [Gutenberg plugin](https://wordpress.org/plugins/gutenberg).  For the full power of the theme, users should install and activate the latest version.
+
 ## Credits
+
+All images are from [WordPress Photos](https://wordpress.org/photos/) and released under the [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) (public domain).
 
 - `public/img/patterns/artist.jpg`: [Photo by Martin Sauter](https://wordpress.org/photos/photo/57661e915c/)
 - `public/img/patterns/chiemsee.jpg`: [Photo by Anariel Design](https://wordpress.org/photos/photo/22261bc467/)

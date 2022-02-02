@@ -20,7 +20,7 @@ namespace X3P0\Profile;
  * @param  string  $abstract
  * @return mixed
  */
-function theme( $abstract = '' ) {
+function theme( string $abstract = '' ) {
 	static $bindings = null;
 
 	if ( is_null( $bindings ) ) {

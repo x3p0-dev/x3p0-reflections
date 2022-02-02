@@ -16,8 +16,8 @@ namespace X3P0\Profile;
 #
 # Trying to keep this simple for now. May move to Composer later.
 
-array_map( function( $file ) {
-	require_once( get_parent_theme_file_path( "src/{$file}.php" ) );
+array_map( function( string $file ) {
+	require_once get_parent_theme_file_path( "src/{$file}.php" );
 }, [
 	'Contracts\Bootable',
         'Assets',

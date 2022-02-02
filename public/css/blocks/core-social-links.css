@@ -1,3 +1,7 @@
+.wp-block-social-links {
+	--wp--style--block-gap: var( --wp--custom--spacing--4 );
+}
+
 .wp-block-social-links.has-small-icon-size {
         font-size: var( --wp--preset--font-size--lg );
 }
@@ -28,6 +32,14 @@
 
 .wp-block-social-links.has-huge-icon-size .wp-block-social-link-label:not( .screen-reader-text ) {
 	font-size: var( --wp--preset--font-size--lg );
+}
+
+.wp-block-social-links.is-style-hand-drawn-border .wp-block-social-link {
+	border: 2px solid currentColor;
+	overflow: hidden;
+	box-shadow: 20px 38px 34px -26px hsla( 0, 0%, 0%, 0.2 ) !important;
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px !important;
+	font-family: var( --wp--preset--font-family--cursive );
 }
 
 .wp-block-social-links:not([class*=is-style-]) .wp-block-social-link-anchor,

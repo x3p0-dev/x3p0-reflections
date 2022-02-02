@@ -47,12 +47,13 @@ class Assets implements Bootable {
 	 * @return void
 	 */
         protected function fontsUrl() {
-                return 'https://fonts.googleapis.com/css2?%sfamily=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Mali&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&default=swap';
+                return 'https://fonts.googleapis.com/css2?%sfamily=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Fuzzy+Bubbles:wght@400;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&default=swap';
         }
 
         /**
          * Enqueues block-specific styles so that they only load when the block
-         * is in use.
+         * is in use. Block styles are stored under `/public/css/blocks`, and
+	 * each file is named `{$block_namespace}-{$block_slug}.css`.
          *
          * @since  1.0.0
          * @access public
@@ -60,20 +61,24 @@ class Assets implements Bootable {
          */
         public function enqueueBlockStyles() {
 
+		// Gets all the block stylesheets.
                 $files = glob( get_parent_theme_file_path( 'public/css/blocks/*.css' ) );
 
                 foreach ( $files as $file ) {
 
+			// Gets the filename without the path or extension.
                         $name = str_replace( [
                                 get_parent_theme_file_path( 'public/css/blocks/' ),
                                 '.css'
                         ], '', $file );
 
+			// Converts the filename to its associated block name.
                         $block = str_replace( 'core-', 'core/', $name );
 
+			// Register the block style.
                         wp_enqueue_block_style( $block, [
                                 'handle' => "x3p0-profile-block-{$name}",
-                                'src'    => get_theme_file_uri( "public/css/blocks/{$name}.css" ),
+                                'src'    => get_theme_file_uri( "public/css/blocks/{$name}.css?v=" . rand() ),
                                 'path'   => get_theme_file_path( "public/css/blocks/{$name}.css" )
                         ] );
                 }

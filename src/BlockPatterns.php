@@ -35,18 +35,21 @@ class BlockPatterns implements Bootable {
         public function register() {
                 $label = __( 'X3P0: %s', 'x3p0-profile' );
 
+		// Registers a block pattern category type.
                 if ( function_exists( 'register_block_pattern_category_type' ) ) {
                         $label = '%s';
-                        register_block_pattern_category_type( 'x3p0-profile', [
+                        register_block_pattern_category_type( 'x3p0', [
                                 'label' => __( 'X3P0', 'x3p0-profile' )
                         ] );
                 }
 
+		// Register block pattern categories.
                 register_block_pattern_category( 'x3p0-profile-cards', [
-                        'label'         => sprintf( $label, __( 'Cards', 'x3p0-profile' ) ),
-                        'categoryTypes' => [ 'x3p0-profile' ]
+                        'label'         => sprintf( $label, __( 'Profile Cards', 'x3p0-profile' ) ),
+                        'categoryTypes' => [ 'x3p0' ]
                 ] );
 
+		// Register block patterns.
                 $this->add( 'artist', [
                         'title' => __( 'Artist', 'x3p0-profile' ),
                         'viewportWidth' => 672
@@ -109,6 +112,8 @@ class BlockPatterns implements Bootable {
          */
         protected function add( string $slug, array $args = [] ) {
 
+		// If no content is passed in, assume there is a corresponding
+		// `/patterns/{$slug}.php` file and pull the content from there.
                 $content = $args['content'] ?? $this->patternContent( $slug );
 
                 register_block_pattern(

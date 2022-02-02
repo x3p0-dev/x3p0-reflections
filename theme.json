@@ -279,7 +279,7 @@
                                         "name": "Monospace"
                                 },
                                 {
-                                        "fontFamily": "\"Mali\", cursive",
+                                        "fontFamily": "\"Fuzzy Bubbles\", cursive",
                                         "slug": "cursive",
                                         "name": "Cursive"
                                 },
@@ -541,12 +541,8 @@
                         "core/file":{
                                 "border": {
                                         "width": "1px",
-                                        "color": "var( --wp--preset--color--neutral-300 )",
+                                        "color": "currentColor",
                                         "style": "solid"
-                                },
-                                "color": {
-                                        "background": "var( --wp--preset--color--neutral-100 )",
-                                        "text": "var( --wp--preset--color--neutral-700 )"
                                 },
                                 "spacing": {
                                         "padding": "var( --wp--custom--spacing--8 )"

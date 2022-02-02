@@ -1,8 +1,7 @@
-h1.has-background,
-h2.has-background,
-h3.has-background,
-h4.has-background,
-h5.has-background,
-h6.has-background {
+:where( h1, h2, h3, h4, h5, h6 ).has-background {
 	padding: var( --wp--style--block-gap );
+}
+
+:where( h1, h2, h3, h4, h5, h6 ).is-style-handwriting {
+	--wp--preset--font-family--headings: var( --wp--preset--font-family--cursive );
 }

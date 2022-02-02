@@ -1,3 +1,11 @@
+p {
+	margin: var( --wp--style--block-gap ) 0 0;
+}
+
 p.has-background {
         padding: var( --wp--custom--spacing--global );
+}
+
+p.is-style-handwriting {
+	font-family: var( --wp--preset--font-family--cursive );
 }

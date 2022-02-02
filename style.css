@@ -45,8 +45,8 @@ figcaption {
 	font-family: var( --wp--preset--font-family--secondary );
 	font-size:   var( --wp--preset--font-size--base );
 	line-height: var( --wp--custom--line-height--base );
-	color:       var( --wp--preset--color--neutral-600 );
 	text-align:  center;
+	opacity:     0.9;
 }
 
 /**
