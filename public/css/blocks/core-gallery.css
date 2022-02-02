@@ -1,4 +1,4 @@
-.wp-block-gallery {
+:where( .wp-block-gallery ) {
         --gallery-block--gutter-size: var( --wp--custom--spacing--4 );
 }
 

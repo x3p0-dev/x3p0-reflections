@@ -1,7 +1,3 @@
-.wp-block-social-links {
-	--wp--style--block-gap: var( --wp--custom--spacing--4 );
-}
-
 .wp-block-social-links.has-small-icon-size {
         font-size: var( --wp--preset--font-size--lg );
 }

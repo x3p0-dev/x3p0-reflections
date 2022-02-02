@@ -510,11 +510,6 @@
                                         "padding": "var( --wp--custom--spacing--4 ) var( --wp--custom--spacing--8 )"
                                 }
                         },
-			"core/buttons": {
-				"spacing": {
-					"margin": "var( --wp--style--block-gap ) 0 0"
-				}
-			},
                         "core/code":{
                                 "border": {
                                         "color": "var( --wp--preset--color--neutral-200 )",
@@ -600,7 +595,7 @@
                         },
 			"core/separator": {
 				"spacing": {
-					"margin": "var( --wp--style--block-gap ) 0 0"
+					"margin": "var( --wp--style--block-gap ) auto 0"
 				}
 			},
                         "core/site-title": {
@@ -610,11 +605,6 @@
                                                         "textDecoration": "none"
                                                 }
                                         }
-                                }
-                        },
-                        "core/social-links": {
-                                "spacing": {
-                                        "blockGap": "var( --wp--custom--spacing--4 )"
                                 }
                         },
                         "core/table": {
