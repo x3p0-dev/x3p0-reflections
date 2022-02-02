@@ -1,7 +1,3 @@
-.wp-block-pullquote {
-	margin: var( --wp--style--block-gap ) 0 0;
-}
-
 .wp-block-pullquote blockquote {
         margin: 0;
 }

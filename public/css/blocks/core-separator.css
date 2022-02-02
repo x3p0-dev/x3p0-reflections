@@ -1,5 +1,4 @@
 .wp-block-separator {
-	margin: var( --wp--style--block-gap ) 0 0;
         border: none;
 	border-top: 1px solid currentColor;
 }

@@ -1,7 +1,3 @@
-.wp-block-image {
-	margin: var( --wp--style--block-gap ) 0 0;
-}
-
 .wp-block-image figcaption {
 	margin-top:    var( --wp--custom--spacing--2 );
 	margin-bottom: 0;

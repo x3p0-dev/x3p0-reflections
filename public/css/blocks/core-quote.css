@@ -1,7 +1,3 @@
-.wp-block-quote {
-	margin: var( --wp--style--block-gap ) 0 0;
-}
-
 .wp-block-quote cite {
         display:  block;
         margin-top: var( --wp--style--block-gap );
