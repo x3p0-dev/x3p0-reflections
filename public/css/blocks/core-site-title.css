@@ -12,6 +12,10 @@
 	color: transparent !important;
 }
 
+.wp-block-site-title.is-style-bg-clip-text:not( .has-background ) {
+	background: var( --wp--preset--gradient--cool-to-warm-spectrum );
+}
+
 .wp-block-site-title.is-style-bg-clip-text > :where( a, span ) {
 	color: transparent !important;
 }
