@@ -30,6 +30,7 @@
 
 :where( h1, h2, h3, h4, h5, h6 ) + * {
         --wp--style--block-gap: var( --wp--custom--spacing--4 );
+	margin-top: var( --wp--style--block-gap );
 }
 
 :where( h1, h2, h3, h4, h5, h6 ) + :where( h2, h3, h4, h5, h6 ) {
