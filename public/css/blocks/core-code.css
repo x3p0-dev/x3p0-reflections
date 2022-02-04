@@ -1,3 +1,7 @@
+.wp-block-code {
+	margin: var( --wp--style--block-gap ) 0 0;
+}
+
 pre.wp-block-code > code {
         overflow: auto;
         word-wrap: normal;

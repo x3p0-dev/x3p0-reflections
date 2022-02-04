@@ -1,3 +1,7 @@
+.wp-block-file {
+	margin: var( --wp--style--block-gap ) 0 0;
+}
+
 .wp-block-file,
 .wp-block-file__content-wrapper {
 	display: flex;

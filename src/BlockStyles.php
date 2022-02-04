@@ -58,8 +58,8 @@ class BlockStyles implements Bootable {
 		// Image.
 
 		register_block_style( 'core/image', [
-			'name' => 'hand-drawn-border',
-			'label' => __( 'Hand-Drawn Border', 'x3po-profile' )
+			'name' => 'hand-drawn',
+			'label' => __( 'Hand-Drawn', 'x3po-profile' )
 		] );
 
 		register_block_style( 'core/image', [
@@ -85,6 +85,16 @@ class BlockStyles implements Bootable {
 		register_block_style( 'core/image', [
 			'name' => 'polaroid-tilt-right',
 			'label' => __( 'Polaroid: Tilt Right', 'x3p0-profile' )
+		] );
+
+		register_block_style( 'core/image', [
+			'name' => 'scotch-tape',
+			'label' => __( 'Scotch Tape', 'x3p0-profile' )
+		] );
+
+		register_block_style( 'core/image', [
+			'name' => 'scotch-tape-corners',
+			'label' => __( 'Scotch Tape: Corners', 'x3p0-profile' )
 		] );
 
 		// List.
