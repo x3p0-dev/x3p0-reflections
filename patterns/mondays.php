@@ -4,7 +4,7 @@
 <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:media-text {"mediaId":9521,"mediaLink":"http://localhost/x3p0-profile/64561f098e71d8679-74452120-1532x1536-1/","mediaType":"image","mediaSizeSlug":"full","imageFill":true} -->
+<!-- wp:media-text {"mediaId":9521,"mediaLink":"http://localhost/x3p0-reflections/64561f098e71d8679-74452120-1532x1536-1/","mediaType":"image","mediaSizeSlug":"full","imageFill":true} -->
 <div class="wp-block-media-text alignwide is-stacked-on-mobile is-image-fill"><figure class="wp-block-media-text__media" style="background-image:url(<?= esc_url( get_theme_file_uri( 'public/img/patterns/mondays.webp' ) ) ?>);background-position:50% 50%"><img src="<?= esc_url( get_theme_file_uri( 'public/img/patterns/mondays.webp' ) ) ?>" alt="" class="wp-image-9521 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:spacer {"height":"4rem"} -->
 <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->

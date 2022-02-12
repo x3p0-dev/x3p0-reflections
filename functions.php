@@ -5,10 +5,10 @@
  * @author    Justin Tadlock <justintadlock@gmail.com>
  * @copyright 2022 Justin Tadlock
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://github.com/x3p0-dev/x3p0-profile
+ * @link      https://github.com/x3p0-dev/x3p0-reflections
  */
 
-namespace X3P0\Profile;
+namespace X3P0\Reflections;
 
 # ------------------------------------------------------------------------------
 # Autoload.
@@ -26,4 +26,4 @@ if ( file_exists( get_parent_theme_file_path( 'vendor/autoload.php' ) ) ) {
 #
 # Just runs a small bootstrapping routine.
 
-do_action( 'x3p0/profile/booted', theme() );
+do_action( 'x3p0/reflections/booted', theme() );

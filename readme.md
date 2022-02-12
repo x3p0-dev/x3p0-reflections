@@ -1,4 +1,4 @@
-# X3P0 - Profile
+# X3P0 - Reflections
 
 A one-page user-profile WordPress theme.  Currently, it ships with a few patterns.  More will be added.
 

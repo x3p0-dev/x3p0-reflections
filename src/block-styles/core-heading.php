@@ -5,25 +5,25 @@
  * @author    Justin Tadlock <justintadlock@gmail.com>
  * @copyright 2022 Justin Tadlock
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://github.com/x3p0-dev/x3p0-profile
+ * @link      https://github.com/x3p0-dev/x3p0-reflections
  */
 
 register_block_style( 'core/heading', [
 	'name' => 'handwriting',
-	'label' => __( 'Handwriting', 'x3p0-profile' )
+	'label' => __( 'Handwriting', 'x3p0-reflections' )
 ] );
 
 register_block_style( 'core/heading', [
 	'name' => 'text-shadow-sm',
-	'label' => __( 'Shadow: Small', 'x3p0-profile' )
+	'label' => __( 'Shadow: Small', 'x3p0-reflections' )
 ] );
 
 register_block_style( 'core/heading', [
 	'name' => 'text-shadow-md',
-	'label' => __( 'Shadow: Medium', 'x3p0-profile' )
+	'label' => __( 'Shadow: Medium', 'x3p0-reflections' )
 ] );
 
 register_block_style( 'core/heading', [
 	'name' => 'text-shadow-lg',
-	'label' => __( 'Shadow: Large', 'x3p0-profile' )
+	'label' => __( 'Shadow: Large', 'x3p0-reflections' )
 ] );

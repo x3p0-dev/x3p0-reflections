@@ -5,10 +5,10 @@
  * @author    Justin Tadlock <justintadlock@gmail.com>
  * @copyright 2022 Justin Tadlock
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://github.com/x3p0-dev/x3p0-profile
+ * @link      https://github.com/x3p0-dev/x3p0-reflections
  */
 
-namespace X3P0\Profile;
+namespace X3P0\Reflections;
 
 use Hybrid\Contracts\Bootable;
 use Hybrid\Mix\Mix;
@@ -102,7 +102,7 @@ class Assets implements Bootable {
 
 			// Register the block style.
                         wp_enqueue_block_style( $block, [
-                                'handle' => "x3p0-profile-block-{$name}",
+                                'handle' => "x3p0-reflections-block-{$name}",
                                 'src'    => $this->mix->asset( "css/blocks/{$name}.css" ),
                                 'path'   => get_theme_file_path( "public/css/blocks/{$name}.css" )
                         ] );
@@ -117,7 +117,7 @@ class Assets implements Bootable {
 
 		foreach ( $heading_blocks as $block ) {
 			wp_enqueue_block_style( $block, [
-				'handle' => "x3p0-profile-block-core-heading",
+				'handle' => "x3p0-reflections-block-core-heading",
 				'src'    => $this->mix->asset( "css/blocks/core-heading.css" ),
 				'path'   => get_theme_file_path( "public/css/blocks/core-heading.css" )
 			] );
@@ -132,8 +132,8 @@ class Assets implements Bootable {
 	 * @return void
 	 */
         public function enqueueAssets() {
-                wp_enqueue_style( 'x3p0-profile-fonts', $this->fontsUrl(), null, null );
-                wp_enqueue_style( 'x3p0-profile-screen', $this->mix->asset( 'css/style.css' ), null, null );
+                wp_enqueue_style( 'x3p0-reflections-fonts', $this->fontsUrl(), null, null );
+                wp_enqueue_style( 'x3p0-reflections-screen', $this->mix->asset( 'css/style.css' ), null, null );
         }
 
         /**
@@ -163,7 +163,7 @@ class Assets implements Bootable {
 	 */
 	public function enqueueBlockEditorAssets() {
 		wp_enqueue_script(
-			'x3p0-profile-editor',
+			'x3p0-reflections-editor',
 			$this->mix->asset( 'js/editor.js' ),
 			[ 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ],
 			null,

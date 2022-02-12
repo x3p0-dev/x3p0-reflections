@@ -4,7 +4,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:group {"align":"wide","layout":{"inherit":true}} -->
-<div class="wp-block-group alignwide"><!-- wp:media-text {"mediaId":9267,"mediaLink":"http://localhost/x3p0-profile/46561c16fc18dc371-43208413-2048x1365-2/","mediaType":"image","mediaSizeSlug":"full","verticalAlignment":"center","imageFill":true,"backgroundColor":"white","textColor":"neutral-700"} -->
+<div class="wp-block-group alignwide"><!-- wp:media-text {"mediaId":9267,"mediaLink":"http://localhost/x3p0-reflections/46561c16fc18dc371-43208413-2048x1365-2/","mediaType":"image","mediaSizeSlug":"full","verticalAlignment":"center","imageFill":true,"backgroundColor":"white","textColor":"neutral-700"} -->
 <div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center is-image-fill has-neutral-700-color has-white-background-color has-text-color has-background"><figure class="wp-block-media-text__media" style="background-image:url(<?= esc_url( get_theme_file_uri( 'public/img/patterns/felix.webp' ) ) ?>);background-position:50% 50%"><img src="<?= esc_url( get_theme_file_uri( 'public/img/patterns/felix.webp' ) ) ?>" alt="" class="wp-image-9267 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:spacer {"height":"12rem"} -->
 <div style="height:12rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->

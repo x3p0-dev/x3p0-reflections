@@ -1,7 +1,7 @@
 {
-	"name"        : "x3p0-dev/x3p0-profile",
+	"name"        : "x3p0-dev/x3p0-reflections",
 	"keywords"    : [ "wordpress" ],
-	"homepage"    : "https://github.com/x3p0-dev/x3p0-profile",
+	"homepage"    : "https://github.com/x3p0-dev/x3p0-reflections",
 	"license"     : "GPL-2.0-or-later",
 	"authors"     : [
 		{
@@ -12,11 +12,11 @@
 		}
 	],
 	"support"     : {
-		"issues" : "https://github.com/x3p0-dev/x3p0-profile/issues"
+		"issues" : "https://github.com/x3p0-dev/x3p0-reflections/issues"
 	},
 	"autoload"    : {
 		"psr-4" : {
-			"X3P0\\Profile\\" : "src/"
+			"X3P0\\Reflections\\" : "src/"
 		},
 		"files" : [
 			"src/functions-helpers.php"

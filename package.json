@@ -1,5 +1,5 @@
 {
-	"name": "x3p0-profile",
+	"name": "x3p0-reflections",
 	"scripts": {
 		"dev": "mix",
 		"watch": "mix watch",

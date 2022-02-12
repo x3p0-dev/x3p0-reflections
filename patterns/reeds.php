@@ -1,4 +1,4 @@
-<!-- wp:media-text {"align":"full","mediaPosition":"right","mediaId":9581,"mediaLink":"http://localhost/x3p0-profile/58261f395b3a27145-16745061-1536x1024-1/","mediaType":"image","imageFill":true,"className":"is-style-full-height"} -->
+<!-- wp:media-text {"align":"full","mediaPosition":"right","mediaId":9581,"mediaLink":"http://localhost/x3p0-reflections/58261f395b3a27145-16745061-1536x1024-1/","mediaType":"image","imageFill":true,"className":"is-style-full-height"} -->
 <div class="wp-block-media-text alignfull has-media-on-the-right is-stacked-on-mobile is-image-fill is-style-full-height"><figure class="wp-block-media-text__media" style="background-image:url(<?= esc_url( get_theme_file_uri( 'public/img/patterns/reeds.webp' ) ) ?>);background-position:50% 50%"><img src="<?= esc_url( get_theme_file_uri( 'public/img/patterns/reeds.webp' ) ) ?>" alt="" class="wp-image-9581 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:spacer {"height":"2rem"} -->
 <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->

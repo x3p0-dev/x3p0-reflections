@@ -5,10 +5,10 @@
  * @author    Justin Tadlock <justintadlock@gmail.com>
  * @copyright 2022 Justin Tadlock
  * @license   https://www.gnu.org/licenses/gpl-2.0.html GPL-2.0-or-later
- * @link      https://github.com/x3p0-dev/x3p0-profile
+ * @link      https://github.com/x3p0-dev/x3p0-reflections
  */
 
-namespace X3P0\Profile;
+namespace X3P0\Reflections;
 
 use Hybrid\Contracts\Bootable;
 
@@ -33,70 +33,70 @@ class BlockPatterns implements Bootable {
 	 * @return void
 	 */
         public function register() {
-                $label = __( 'X3P0: %s', 'x3p0-profile' );
+                $label = __( 'X3P0: %s', 'x3p0-reflections' );
 
 		// Registers a block pattern category type.
                 if ( function_exists( 'register_block_pattern_category_type' ) ) {
                         $label = '%s';
                         register_block_pattern_category_type( 'x3p0', [
-                                'label' => __( 'X3P0', 'x3p0-profile' )
+                                'label' => __( 'X3P0', 'x3p0-reflections' )
                         ] );
                 }
 
 		// Register block pattern categories.
-                register_block_pattern_category( 'x3p0-profile-cards', [
-                        'label'         => sprintf( $label, __( 'Profile Cards', 'x3p0-profile' ) ),
+                register_block_pattern_category( 'x3p0-reflections-cards', [
+                        'label'         => sprintf( $label, __( 'Profile Cards', 'x3p0-reflections' ) ),
                         'categoryTypes' => [ 'x3p0' ]
                 ] );
 
 		// Register block patterns.
                 $this->add( 'artist', [
-                        'title' => __( 'Artist', 'x3p0-profile' ),
+                        'title' => __( 'Artist', 'x3p0-reflections' ),
                         'viewportWidth' => 672
                 ] );
 
                 $this->add( 'chiemsee', [
-                        'title' => __( 'Chiemsee', 'x3p0-profile' ),
+                        'title' => __( 'Chiemsee', 'x3p0-reflections' ),
                         'viewportWidth' => 672
                 ] );
 
                 $this->add( 'felix', [
-                        'title' => __( 'Felix', 'x3p0-profile' ),
+                        'title' => __( 'Felix', 'x3p0-reflections' ),
                         'viewportWidth' => 1056
                 ] );
 
                 $this->add( 'gamer', [
-                        'title' => __( 'Gamer', 'x3p0-profile' ),
+                        'title' => __( 'Gamer', 'x3p0-reflections' ),
                         'viewportWidth' => 672
                 ] );
 
                 $this->add( 'mondays', [
-                        'title' => __( 'Mondays', 'x3p0-profile' ),
+                        'title' => __( 'Mondays', 'x3p0-reflections' ),
                         'viewportWidth' => 1056
                 ] );
 
                 $this->add( 'mountain-field', [
-                        'title' => __( 'Mountain Field', 'x3p0-profile' ),
+                        'title' => __( 'Mountain Field', 'x3p0-reflections' ),
                         'viewportWidth' => 672
                 ] );
 
                 $this->add( 'night-sky', [
-                        'title' => __( 'Night Sky', 'x3p0-profile' ),
+                        'title' => __( 'Night Sky', 'x3p0-reflections' ),
                         'viewportWidth' => 672
                 ] );
 
                 $this->add( 'notes-in-the-void', [
-                        'title' => __( 'Notes in the Void', 'x3p0-profile' ),
+                        'title' => __( 'Notes in the Void', 'x3p0-reflections' ),
                         'viewportWidth' => 672
                 ] );
 
                 $this->add( 'reeds', [
-                        'title' => __( 'Reeds', 'x3p0-profile' ),
+                        'title' => __( 'Reeds', 'x3p0-reflections' ),
                         'viewportWidth' => 1376
                 ] );
 
                 $this->add( 'reflections', [
-                        'title' => __( 'Reflections', 'x3p0-profile' ),
+                        'title' => __( 'Reflections', 'x3p0-reflections' ),
                         'viewportWidth' => 672
                 ] );
         }
@@ -117,9 +117,9 @@ class BlockPatterns implements Bootable {
                 $content = $args['content'] ?? $this->patternContent( $slug );
 
                 register_block_pattern(
-                        "x3p0-profile/{$slug}",
+                        "x3p0-reflections/{$slug}",
                         wp_parse_args( $args, [
-                                'categories'    => [ 'x3p0-profile-cards' ],
+                                'categories'    => [ 'x3p0-reflections-cards' ],
                                 'blockTypes'    => [ 'core/template-part/content' ],
                                 'viewportWidth' => 672,
                                 'content'       => $content
