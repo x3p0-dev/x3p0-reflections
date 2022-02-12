@@ -1,6 +1,6 @@
 # X3P0 - Reflections
 
-A one-page user-profile WordPress theme.  Currently, it ships with a few patterns.  More will be added.
+A one-page user-profile WordPress theme.  Really, it's just a single page.
 
 ## Recommended
 
@@ -20,3 +20,9 @@ All images are from [WordPress Photos](https://wordpress.org/photos/) and releas
 - `public/img/patterns/notes-in-the-void.jpg`: [Photo by Anne McCarthy](https://wordpress.org/photos/photo/75561b91da/)
 - `public/img/patterns/reeds.jpg`: [Photo by Carolina Nymark](https://wordpress.org/photos/photo/58261f395b/)
 - `public/img/patterns/reflections.jpg`: [Photo by Anne McCarthy](https://wordpress.org/photos/photo/32661ecf00/)
+
+## Copyright and License
+
+X3P0 - Reflections is licensed under the [GNU GPL](https://www.gnu.org/licenses/gpl-2.0.html), version 2 or later.
+
+2022 &copy; Justin Tadlock.
