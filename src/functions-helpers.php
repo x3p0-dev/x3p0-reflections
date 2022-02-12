@@ -10,6 +10,8 @@
 
 namespace X3P0\Profile;
 
+use Hybrid\Mix\Mix;
+
 /**
  * Mini container.  This allows us to set up single instances of our objects
  * without using the singleton pattern and gives third-party devs easy access to
@@ -25,7 +27,12 @@ function theme( string $abstract = '' ) {
 
 	if ( is_null( $bindings ) ) {
 		$bindings = [
-			Assets::class         => new Assets(),
+			Assets::class => new Assets(
+				new Mix(
+					get_parent_theme_file_path( 'public' ),
+					get_parent_theme_file_uri( 'public' )
+				)
+			),
 			BlockPatterns::class  => new BlockPatterns(),
 			BlockStyles::class    => new BlockStyles(),
 			BlockTemplates::class => new BlockTemplates(),

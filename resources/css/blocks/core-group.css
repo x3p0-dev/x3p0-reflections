@@ -1,0 +1,11 @@
+.wp-block-group:where( .has-background ) {
+        padding: var( --wp--custom--spacing--global );
+}
+
+.wp-block-group.is-style-hand-drawn-border {
+	padding: var( --wp--custom--spacing--global );
+	border: 2px solid currentColor;
+	overflow: hidden;
+	box-shadow: var( --wp--custom--shadow--md );
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px !important;
+}

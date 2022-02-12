@@ -171,10 +171,10 @@
                                 "spacing": "0.25rem"
                         },
                         "layout": {
-                                "content": "39rem",
+                                "content": "38rem",
                                 "wide": "64rem"
                         },
-                        "line-height": {
+                        "lineHeight": {
                                 "9-xl": "1",
                                 "8-xl": "1",
                                 "7-xl": "1",
@@ -189,6 +189,7 @@
                                 "sm": "1.5rem",
                                 "xs": "1.25rem"
                         },
+			"mixBlendMode": "normal",
 			"shadow": {
 				"none": "none",
 				"sm": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
@@ -212,17 +213,17 @@
                                 "global": "calc( var( --wp--custom--base--spacing ) * 8 )",
                                 "px": "1px"
                         },
-                        "leading": {
-                                "none": 1,
-                                "tight": 1.25,
-                                "snug": 1.375,
-                                "normal": 1.5,
-                                "relaxed": 1.625,
-                                "loose": 1.75
-                        }
+			"textDecoration": "solid underline",
+			"textShadow": {
+				"sm": "1px 1px 2px rgba( 0, 0, 0, 0.5 )",
+				"md": "0 2px 5px rgba( 0, 0, 0, 0.5 )",
+				"lg": "0 2px 10px rgba( 0, 0, 0, 0.5 )"
+			},
+			"textUnderlineOffset": "auto",
+			"transition": "all 0.5s ease-in-out"
                 },
                 "layout": {
-                        "contentSize": "39rem",
+                        "contentSize": "38rem",
                         "wideSize": "64rem"
                 },
                 "spacing": {
@@ -249,7 +250,7 @@
                         "textTransform": true,
                         "fontFamilies": [
                                 {
-                                        "fontFamily": "\"Work Sans\", sans-serif",
+                                        "fontFamily": "\"Montserrat\", sans-serif",
                                         "slug": "headings",
                                         "name": "Headings"
                                 },
@@ -259,7 +260,7 @@
                                         "name": "Primary"
                                 },
                                 {
-                                        "fontFamily": "\"Cabin\", sans-serif",
+                                        "fontFamily": "var( --wp--preset--font-family--primary )",
                                         "slug": "secondary",
                                         "name": "Secondary"
                                 },
@@ -269,7 +270,7 @@
                                         "name": "Serif"
                                 },
                                 {
-                                        "fontFamily": "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif",
+                                        "fontFamily": "var( --wp--preset--font-family--primary )",
                                         "slug": "sans",
                                         "name": "Sans Serif"
                                 },
@@ -280,13 +281,13 @@
                                 },
                                 {
                                         "fontFamily": "\"Fuzzy Bubbles\", cursive",
-                                        "slug": "cursive",
-                                        "name": "Cursive"
+                                        "slug": "handwriting",
+                                        "name": "Handwriting"
                                 },
                                 {
                                         "fontFamily": "fantasy",
-                                        "slug": "fantasy",
-                                        "name": "Fantasy"
+                                        "slug": "display",
+                                        "name": "Display"
                                 }
                         ],
                         "fontSizes": [
@@ -422,6 +423,16 @@
                                         "lineHeight": true
                                 }
                         },
+                        "core/post-title": {
+                                "typography": {
+                                        "lineHeight": true
+                                }
+                        },
+                        "core/query-title": {
+                                "typography": {
+                                        "lineHeight": true
+                                }
+                        },
                         "core/site-title": {
                                 "typography": {
                                         "lineHeight": true
@@ -499,7 +510,7 @@
                                 },
                                 "typography": {
                                         "fontSize": "var( --wp--preset--font-size--lg )",
-                                        "lineHeight": "var( --wp--custom--leading--none )"
+                                        "lineHeight": "1"
                                 },
                                 "spacing": {
                                         "padding": "var( --wp--custom--spacing--4 ) var( --wp--custom--spacing--8 )"
@@ -518,7 +529,7 @@
                                 "typography": {
                                         "fontFamily": "var( --wp--preset--font-family--mono )",
                                         "fontSize": "var( --wp--preset--font-size--lg )",
-                                        "lineHeight": "var( --wp--custom--leading--none )"
+                                        "lineHeight": "var( --wp--custom--line-height--lg )"
                                 },
                                 "spacing": {
                                         "padding": "var( --wp--custom--spacing--global )"
@@ -556,15 +567,17 @@
 			},
                         "core/pullquote": {
                                 "color": {
-                                        "background": "var( --wp--preset--color--neutral-100 )"
+					"text": "var( --wp--preset--color--neutral-800 )"
                                 },
 				"spacing": {
-                                        "padding": "var( --wp--style--block-gap )"
+                                        "padding": "var( --wp--custom--spacing--global )"
                                 },
-                                "typography": {
-                                        "fontStyle": "italic",
+		                "typography": {
+					"fontFamily": "var( --wp--preset--font-family--headings )",
+					"fontWeight": "900",
+                                        "fontStyle": "normal",
                                         "fontSize": "var( --wp--preset--font-size--3-xl )",
-                                        "lineHeight": "var( --line-height--3-xl )"
+                                        "lineHeight": "var( --wp--custom--line-height--3-xl )"
                                 }
                         },
                         "core/quote": {
@@ -573,6 +586,15 @@
                                 },
                                 "typography": {
                                         "fontStyle": "italic"
+                                }
+                        },
+                        "core/post-title": {
+                                "elements": {
+                                        "link" : {
+                                                "typography": {
+                                                        "textDecoration": "none"
+                                                }
+                                        }
                                 }
                         },
                         "core/site-title": {

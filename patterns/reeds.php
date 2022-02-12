@@ -1,5 +1,5 @@
 <!-- wp:media-text {"align":"full","mediaPosition":"right","mediaId":9581,"mediaLink":"http://localhost/x3p0-profile/58261f395b3a27145-16745061-1536x1024-1/","mediaType":"image","imageFill":true,"className":"is-style-full-height"} -->
-<div class="wp-block-media-text alignfull has-media-on-the-right is-stacked-on-mobile is-image-fill is-style-full-height"><figure class="wp-block-media-text__media" style="background-image:url(<?= esc_url( get_theme_file_uri( 'public/img/patterns/reeds.jpg' ) ) ?>);background-position:50% 50%"><img src="<?= esc_url( get_theme_file_uri( 'public/img/patterns/reeds.jpg' ) ) ?>" alt="" class="wp-image-9581 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:spacer {"height":"2rem"} -->
+<div class="wp-block-media-text alignfull has-media-on-the-right is-stacked-on-mobile is-image-fill is-style-full-height"><figure class="wp-block-media-text__media" style="background-image:url(<?= esc_url( get_theme_file_uri( 'public/img/patterns/reeds.webp' ) ) ?>);background-position:50% 50%"><img src="<?= esc_url( get_theme_file_uri( 'public/img/patterns/reeds.webp' ) ) ?>" alt="" class="wp-image-9581 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:spacer {"height":"2rem"} -->
 <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
@@ -25,8 +25,8 @@
 <!-- /wp:separator -->
 
 <!-- wp:group {"tagName":"footer"} -->
-<footer class="wp-block-group"><!-- wp:social-links {"iconColor":"neutral-700","iconColorValue":"#4a5568","iconBackgroundColor":"transparent","iconBackgroundColorValue":"transparent","showLabels":true,"size":"has-large-icon-size","className":"is-style-square-outline","layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
-<ul class="wp-block-social-links has-large-icon-size has-visible-labels has-icon-color has-icon-background-color is-style-square-outline"><!-- wp:social-link {"url":"#","service":"instagram"} /-->
+<footer class="wp-block-group"><!-- wp:social-links {"iconColor":"neutral-700","iconColorValue":"#4a5568","iconBackgroundColor":"transparent","iconBackgroundColorValue":"transparent","size":"has-normal-icon-size","className":"has-visible-labels is-style-square-outline","layout":{"type":"flex","justifyContent":"center","orientation":"horizontal"}} -->
+<ul class="wp-block-social-links has-normal-icon-size has-icon-color has-icon-background-color has-visible-labels is-style-square-outline"><!-- wp:social-link {"url":"#","service":"instagram"} /-->
 
 <!-- wp:social-link {"url":"#","service":"facebook"} /-->
 

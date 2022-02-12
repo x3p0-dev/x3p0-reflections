@@ -1,0 +1,8 @@
+:where( .wp-block-columns.is-style-hand-drawn ) > :where( .wp-block-column ) {
+	padding: var( --wp--custom--spacing--global );
+	border: 2px solid currentColor;
+	overflow: hidden;
+	font-family: var( --wp--preset--font-family--handwriting );
+	box-shadow: var( --wp--custom--shadow--md );
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px !important;
+}

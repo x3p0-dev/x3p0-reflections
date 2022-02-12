@@ -1,0 +1,37 @@
+p.has-background {
+        padding: var( --wp--custom--spacing--global );
+}
+
+p.is-style-handwriting {
+	font-family: var( --wp--preset--font-family--handwriting );
+}
+
+p.is-style-indent {
+	text-indent: calc( 1.5 * var( --wp--custom--spacing--global ) );
+}
+
+p[class*=is-style-first-line]::first-line {
+	font-weight: 700;
+}
+
+p.is-style-first-line-small-caps::first-line {
+	font-variant: small-caps;
+}
+
+.has-drop-cap:not(:focus)::first-letter {
+	font-family: var( --wp--custom--drop-cap--typography--font-family, inherit );
+	font-size: var( --wp--custom--drop-cap--typography--font-size, 5.2em );
+	font-weight: var( --wp--custom--drop-cap--typography--font-weight, 700 );
+	font-style: var( --wp--custom--drop-cap--typography--font-style, normal );
+	line-height: var( --wp--custom--drop-cap--typography--line-height, 1 );
+	margin: var( --wp--custom--drop-cap--spacing--margin, 0 0.125em 0 0 );
+	padding: var( --wp--custom--drop-cap--spacing--padding, 0 );
+}
+
+p.is-style-indent.has-drop-cap {
+	text-indent: 0;
+}
+
+p.is-style-indent.has-drop-cap:not(:focus)::first-letter {
+	margin-left: calc( 1.5 * var( --wp--custom--spacing--global ) );
+}

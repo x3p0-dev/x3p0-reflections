@@ -10,9 +10,31 @@
 
 namespace X3P0\Profile;
 
-use X3P0\Profile\Contracts\Bootable;
+use Hybrid\Contracts\Bootable;
+use Hybrid\Mix\Mix;
 
 class Assets implements Bootable {
+
+	/**
+	 * Instance of the Mix object.
+	 *
+	 * @since  1.0.0
+	 * @access private
+	 * @var    Mix
+	 */
+	private $mix;
+
+	/**
+	 * Sets up object state.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @param  Mix    $mix
+	 * @return void
+	 */
+	public function __construct( Mix $mix ) {
+		$this->mix = $mix;
+	}
 
         /**
 	 * Bootstraps the class' actions/filters.
@@ -32,7 +54,10 @@ class Assets implements Bootable {
                 // Front-end and editor.
                 add_action( 'enqueue_block_assets', [ $this, 'enqueueBlockAssets' ] );
 
-                // Editor only.
+		// Editor only.
+		add_action( 'enqueue_block_editor_assets', [ $this, 'enqueueBlockEditorAssets' ] );
+
+                // Editor styles.
                 add_action( 'admin_init', [ $this, 'addEditorStyles' ] );
         }
 
@@ -47,7 +72,7 @@ class Assets implements Bootable {
 	 * @return void
 	 */
         protected function fontsUrl() {
-                return 'https://fonts.googleapis.com/css2?%sfamily=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Fuzzy+Bubbles:wght@400;700&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&default=swap';
+                return 'https://fonts.googleapis.com/css2?%sfamily=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Fuzzy+Bubbles:wght@400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&default=swap';
         }
 
         /**
@@ -78,10 +103,25 @@ class Assets implements Bootable {
 			// Register the block style.
                         wp_enqueue_block_style( $block, [
                                 'handle' => "x3p0-profile-block-{$name}",
-                                'src'    => get_theme_file_uri( "public/css/blocks/{$name}.css?v=" . rand() ),
+                                'src'    => $this->mix->asset( "css/blocks/{$name}.css" ),
                                 'path'   => get_theme_file_path( "public/css/blocks/{$name}.css" )
                         ] );
                 }
+
+		// Make sure heading styles are loaded for all heading-type blocks.
+		$heading_blocks = [
+			'core/post-title',
+			'core/query-title',
+			'core/site-title'
+		];
+
+		foreach ( $heading_blocks as $block ) {
+			wp_enqueue_block_style( $block, [
+				'handle' => "x3p0-profile-block-core-heading",
+				'src'    => $this->mix->asset( "css/blocks/core-heading.css" ),
+				'path'   => get_theme_file_path( "public/css/blocks/core-heading.css" )
+			] );
+		}
         }
 
         /**
@@ -93,7 +133,7 @@ class Assets implements Bootable {
 	 */
         public function enqueueAssets() {
                 wp_enqueue_style( 'x3p0-profile-fonts', $this->fontsUrl(), null, null );
-                wp_enqueue_style( 'x3p0-profile-screen', get_stylesheet_uri(), null, null );
+                wp_enqueue_style( 'x3p0-profile-screen', $this->mix->asset( 'css/style.css' ), null, null );
         }
 
         /**
@@ -114,6 +154,23 @@ class Assets implements Bootable {
                 wp_register_style( 'wp-block-library-theme', '' );
         }
 
+	/**
+	 * Enqueue scripts for the editor.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @return void
+	 */
+	public function enqueueBlockEditorAssets() {
+		wp_enqueue_script(
+			'x3p0-profile-editor',
+			$this->mix->asset( 'js/editor.js' ),
+			[ 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ],
+			null,
+			true
+	        );
+	}
+
         /**
 	 * Add editor stylesheets.
 	 *
@@ -123,7 +180,7 @@ class Assets implements Bootable {
 	 */
         public function addEditorStyles() {
                 add_editor_style( [
-                        get_stylesheet_uri(),
+                        $this->mix->asset( 'css/style.css' ),
                         $this->fontsUrl(),
                 ] );
         }

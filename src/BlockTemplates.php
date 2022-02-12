@@ -10,7 +10,7 @@
 
 namespace X3P0\Profile;
 
-use X3P0\Profile\Contracts\Bootable;
+use Hybrid\Contracts\Bootable;
 
 class BlockTemplates implements Bootable {
 

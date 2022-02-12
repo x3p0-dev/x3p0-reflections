@@ -10,9 +10,18 @@
 
 namespace X3P0\Profile;
 
-use X3P0\Profile\Contracts\Bootable;
+use Hybrid\Contracts\Bootable;
 
 class ImageSizes implements Bootable {
+
+	/**
+	 * Width size to scale large images down to.
+	 *
+	 * @since  1.0.0
+	 * @access protected
+	 * @var    int
+	 */
+	protected $threshold_width = 3480;
 
         /**
 	 * Bootstraps the class' actions/filters.
@@ -24,6 +33,7 @@ class ImageSizes implements Bootable {
         public function boot() {
                 add_action( 'init', [ $this, 'addImageSizes' ] );
                 add_filter( 'image_size_names_choose', [ $this, 'imageSizeNamesChoose' ] );
+		add_filter( 'big_image_size_threshold', [ $this, 'bigImageSizeThreshold' ], 5 );
         }
 
         /**
@@ -45,15 +55,25 @@ class ImageSizes implements Bootable {
 		add_image_size( 'x3p0-profile-21x9-lg', 1024, 432, true );
 		add_image_size( 'x3p0-profile-21x9-xl', 2048, 864, true );
 
+		// 18:5 - Landscape.
+		add_image_size( 'x3p0-profile-18x5-md', 640,  178,  true );
+		add_image_size( 'x3p0-profile-18x5-lg', 1024, 284,  true );
+		add_image_size( 'x3p0-profile-18x5-xl', 2048, 569,  true );
+
 		// 9:16 - Portrait.
                 add_image_size( 'x3p0-profile-9x16-md',  640, 1138, true );
                 add_image_size( 'x3p0-profile-9x16-lg', 1024, 1820, true );
                 add_image_size( 'x3p0-profile-9x16-xl', 2048, 3641, true );
 
 		// 2:3 - Portrait.
-                add_image_size( 'x3p0-profile-2x3-lg',   640,  960, true );
+                add_image_size( 'x3p0-profile-2x3-md',   640,  960, true );
                 add_image_size( 'x3p0-profile-2x3-lg',  1024, 1536, true );
-                add_image_size( 'x3p0-profile-2x3-lg',  2048, 3072, true );
+                add_image_size( 'x3p0-profile-2x3-xl',  2048, 3072, true );
+
+		// 3:4 - Portrait.
+                add_image_size( 'x3p0-profile-3x4-md',   640,  853, true );
+                add_image_size( 'x3p0-profile-3x4-lg',  1024, 1365, true );
+                add_image_size( 'x3p0-profile-3x3-xl',  2048, 2731, true );
 
 		// Square.
                 add_image_size( 'x3p0-profile-1x1-md',  640,  640, true );
@@ -82,6 +102,11 @@ class ImageSizes implements Bootable {
                 $sizes[ 'x3p0-profile-21x9-lg'] = __( '21:9 (Landscape) - Large',  'x3p0-profile' );
                 $sizes[ 'x3p0-profile-21x9-xl'] = __( '21:9 (Landscape) - XL',     'x3p0-profile' );
 
+		// 18:5 - Landscape.
+		$sizes[ 'x3p0-profile-18x5-md'] = __( '18:5 - Medium (Landscape)', 'x3p0-profile' );
+		$sizes[ 'x3p0-profile-18x5-lg'] = __( '18:5 - Large (Landscape)', 'x3p0-profile' );
+		$sizes[ 'x3p0-profile-18x5-xl'] = __( '18:5 - XL (Landscape)', 'x3p0-profile' );
+
 		// 9:16 - Portrait
                 $sizes[ 'x3p0-profile-9x16-md'] = __( '9:16 (Portrait) - Medium', 'x3p0-profile' );
                 $sizes[ 'x3p0-profile-9x16-lg'] = __( '9:16 (Portrait) - Large',  'x3p0-profile' );
@@ -92,6 +117,11 @@ class ImageSizes implements Bootable {
                 $sizes[ 'x3p0-profile-2x3-lg'] = __( '2:3 (Portrait) - Large',  'x3p0-profile' );
                 $sizes[ 'x3p0-profile-2x3-xl'] = __( '2:3 (Portrait) - XL',     'x3p0-profile' );
 
+		// 3:4 - Portrait
+		$sizes[ 'x3p0-profile-3x4-md'] = __( '3:4 (Portrait) - Medium', 'x3p0-profile' );
+		$sizes[ 'x3p0-profile-3x4-lg'] = __( '3:4 (Portrait) - Large',  'x3p0-profile' );
+		$sizes[ 'x3p0-profile-3x4-xl'] = __( '3:4 (Portrait) - XL',     'x3p0-profile' );
+
 		// Square.
 		$sizes[ 'x3p0-profile-1x1-md'] = __( '1:1 (Square) - Medium', 'x3p0-profile' );
 		$sizes[ 'x3p0-profile-1x1-lg'] = __( '1:1 (Square) - Large',  'x3p0-profile' );
@@ -99,4 +129,21 @@ class ImageSizes implements Bootable {
 
                 return $sizes;
         }
+
+	/**
+	 * Limit the big image threshold to our largest image.
+	 *
+	 * @since  1.0.0
+	 * @access public
+	 * @param  int    $threshold
+	 * @return int
+	 */
+	public function bigImageSizeThreshold( $threshold ) {
+
+		if ( $this->threshold_width > $threshold ) {
+			return $this->threshold_width;
+		}
+
+		return $threshold;
+	}
 }

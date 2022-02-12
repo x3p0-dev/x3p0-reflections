@@ -1,0 +1,1 @@
+:where(.wp-block-columns.is-style-hand-drawn)>:where(.wp-block-column){border:2px solid;border-radius:255px 15px 225px 15px/15px 225px 15px 255px!important;box-shadow:var( --wp--custom--shadow--md );font-family:var( --wp--preset--font-family--handwriting );overflow:hidden;padding:var( --wp--custom--spacing--global )}

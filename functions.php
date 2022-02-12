@@ -11,22 +11,14 @@
 namespace X3P0\Profile;
 
 # ------------------------------------------------------------------------------
-# Loading theme classes and files.
+# Autoload.
 # ------------------------------------------------------------------------------
 #
-# Trying to keep this simple for now. May move to Composer later.
+# Auto-load classes and files via the Composer autoloader.
 
-array_map( function( string $file ) {
-	require_once get_parent_theme_file_path( "src/{$file}.php" );
-}, [
-	'Contracts\Bootable',
-        'Assets',
-        'BlockPatterns',
-        'BlockStyles',
-        'BlockTemplates',
-        'ImageSizes',
-	'functions-helpers'
-] );
+if ( file_exists( get_parent_theme_file_path( 'vendor/autoload.php' ) ) ) {
+	require_once get_parent_theme_file_path( 'vendor/autoload.php' );
+}
 
 # ------------------------------------------------------------------------------
 # Bootstrap theme.

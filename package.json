@@ -1,0 +1,15 @@
+{
+	"name": "x3p0-profile",
+	"scripts": {
+		"dev": "mix",
+		"watch": "mix watch",
+		"prod": "mix --production",
+		"export": "npx mix --mix-config=webpack.mix.export.js --production"
+	},
+	"devDependencies": {
+		"cross-env": "^5.2.1",
+		"laravel-mix": "^6.0.25",
+		"postcss-preset-env": "^6.7.0",
+		"rimraf": "^3.0.2"
+	}
+}

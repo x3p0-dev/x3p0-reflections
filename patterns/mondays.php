@@ -5,7 +5,7 @@
 <!-- /wp:spacer -->
 
 <!-- wp:media-text {"mediaId":9521,"mediaLink":"http://localhost/x3p0-profile/64561f098e71d8679-74452120-1532x1536-1/","mediaType":"image","mediaSizeSlug":"full","imageFill":true} -->
-<div class="wp-block-media-text alignwide is-stacked-on-mobile is-image-fill"><figure class="wp-block-media-text__media" style="background-image:url(<?= esc_url( get_theme_file_uri( 'public/img/patterns/mondays.jpg' ) ) ?>);background-position:50% 50%"><img src="<?= esc_url( get_theme_file_uri( 'public/img/patterns/mondays.jpg' ) ) ?>" alt="" class="wp-image-9521 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:spacer {"height":"4rem"} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile is-image-fill"><figure class="wp-block-media-text__media" style="background-image:url(<?= esc_url( get_theme_file_uri( 'public/img/patterns/mondays.webp' ) ) ?>);background-position:50% 50%"><img src="<?= esc_url( get_theme_file_uri( 'public/img/patterns/mondays.webp' ) ) ?>" alt="" class="wp-image-9521 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:spacer {"height":"4rem"} -->
 <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
@@ -15,8 +15,8 @@
 <p class="has-base-font-size">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph -->
 
-<!-- wp:social-links {"iconColor":"neutral-700","iconColorValue":"#4a5568","iconBackgroundColor":"neutral-300","iconBackgroundColorValue":"#e2e8f0","showLabels":true,"size":"has-large-icon-size","className":"is-style-square-width-50","layout":{"type":"flex","justifyContent":"left","orientation":"horizontal"}} -->
-<ul class="wp-block-social-links has-large-icon-size has-visible-labels has-icon-color has-icon-background-color is-style-square-width-50"><!-- wp:social-link {"url":"#","service":"instagram"} /-->
+<!-- wp:social-links {"iconColor":"neutral-700","iconColorValue":"#4a5568","iconBackgroundColor":"neutral-300","iconBackgroundColorValue":"#e2e8f0","size":"has-large-icon-size","className":"has-visible-labels is-style-square-width-50","layout":{"type":"flex","justifyContent":"left","orientation":"horizontal"}} -->
+<ul class="wp-block-social-links has-large-icon-size has-icon-color has-icon-background-color has-visible-labels is-style-square-width-50"><!-- wp:social-link {"url":"#","service":"instagram"} /-->
 
 <!-- wp:social-link {"url":"#","service":"facebook"} /-->
 

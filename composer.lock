@@ -1,0 +1,118 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "659f241291824fe43b86cd2e24fe2df9",
+    "packages": [
+        {
+            "name": "themehybrid/hybrid-contracts",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/themehybrid/hybrid-contracts.git",
+                "reference": "71cc43a0f00052449b62041ee308a5db9b3e4079"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/themehybrid/hybrid-contracts/zipball/71cc43a0f00052449b62041ee308a5db9b3e4079",
+                "reference": "71cc43a0f00052449b62041ee308a5db9b3e4079",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hybrid\\Contracts\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Tadlock",
+                    "email": "justintadlock@gmail.com",
+                    "homepage": "http://justintadlock.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Contracts for the Hybrid Core framework.",
+            "homepage": "https://github.com/themehybrid/hybrid-contracts",
+            "keywords": [
+                "wordpress"
+            ],
+            "support": {
+                "forum": "https://themehybrid.com/board/forums/hybrid-core",
+                "issues": "https://github.com/themehybrid/hybrid-contracts/issues",
+                "source": "https://github.com/themehybrid/hybrid-contracts/tree/1.0.0"
+            },
+            "time": "2021-07-31T19:23:47+00:00"
+        },
+        {
+            "name": "themehybrid/hybrid-mix",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/themehybrid/hybrid-mix.git",
+                "reference": "76ac443371790ff4f34f028ff957a24319c4b267"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/themehybrid/hybrid-mix/zipball/76ac443371790ff4f34f028ff957a24319c4b267",
+                "reference": "76ac443371790ff4f34f028ff957a24319c4b267",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hybrid\\Mix\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Tadlock",
+                    "email": "justintadlock@gmail.com",
+                    "homepage": "https://themehybrid.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Hybrid Mix is a helper class for WordPress plugins and themes using Laravel Mix.",
+            "homepage": "https://github.com/themehybrid/hybrid-mix",
+            "keywords": [
+                "wordpress"
+            ],
+            "support": {
+                "forum": "https://themehybrid.com/board/forums/hybrid-core",
+                "issues": "https://github.com/themehybrid/hybrid-mix/issues",
+                "source": "https://github.com/themehybrid/hybrid-mix/tree/1.0.0"
+            },
+            "time": "2021-06-29T02:54:01+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "themehybrid/hybrid-mix": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.2"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}

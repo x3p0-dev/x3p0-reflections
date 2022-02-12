@@ -1,11 +1,1 @@
-p {
-	margin: var( --wp--style--block-gap ) 0 0;
-}
-
-p.has-background {
-        padding: var( --wp--custom--spacing--global );
-}
-
-p.is-style-handwriting {
-	font-family: var( --wp--preset--font-family--cursive );
-}
+p.has-background{padding:var( --wp--custom--spacing--global )}p.is-style-handwriting{font-family:var( --wp--preset--font-family--handwriting )}p.is-style-indent{text-indent:calc(var( --wp--custom--spacing--global )*1.5)}p[class*=is-style-first-line]:first-line{font-weight:700}p.is-style-first-line-small-caps:first-line{font-feature-settings:"smcp";font-variant:small-caps}.has-drop-cap:not(:focus):first-letter{font-family:inherit;font-family:var( --wp--custom--drop-cap--typography--font-family,inherit );font-size:5.2em ;font-size:var( --wp--custom--drop-cap--typography--font-size,5.2em );font-style:normal ;font-style:var( --wp--custom--drop-cap--typography--font-style,normal );font-weight:700 ;font-weight:var( --wp--custom--drop-cap--typography--font-weight,700 );line-height:1 ;line-height:var( --wp--custom--drop-cap--typography--line-height,1 );margin:0 .125em 0 0;margin:var( --wp--custom--drop-cap--spacing--margin,0 .125em 0 0 );padding:0;padding:var( --wp--custom--drop-cap--spacing--padding,0 )}p.is-style-indent.has-drop-cap{text-indent:0}p.is-style-indent.has-drop-cap:not(:focus):first-letter{margin-left:calc(var( --wp--custom--spacing--global )*1.5)}

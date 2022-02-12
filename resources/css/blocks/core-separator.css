@@ -1,0 +1,69 @@
+.wp-block-separator {
+	margin: var( --wp--style--block-gap ) auto 0;
+        border: none;
+	border-top: 1px solid currentColor;
+}
+
+.wp-block-separator:not([class*=is-style-]),
+.wp-block-separator.is-style-default {
+        max-width: 50%;
+        width: 240px;
+}
+
+.wp-block-separator.is-style-hand-drawn {
+	margin-bottom: -20px !important;
+	padding: var( --wp--custom--spacing--4 );
+	background: none !important;
+	border-top-width: 4px;
+	border-radius: 255px 15px 0 0/15px 4px 0 0 !important;
+}
+
+.wp-block-separator.is-style-hatched {
+	height: 1rem;
+	border: none;
+	background-color: transparent !important;
+	background-image: linear-gradient(
+		-45deg,
+		currentColor 25%,
+		transparent 25%,
+		transparent 50%,
+		currentColor 50%,
+		currentColor 75%,
+		transparent 75%,
+		transparent
+	);
+	background-position: 0;
+	background-size: 0.5rem 0.5rem;
+}
+
+.wp-block-separator[class*=is-style-scallop] {
+	height: var( --wp--custom--spacing--4 );
+	width: 100%;
+	border: none;
+	background-color: transparent !important;
+	background-size: var( --wp--custom--spacing--8 ) 100%;
+}
+
+.wp-block-separator.is-style-scallop-down {
+	background-image: radial-gradient(
+		var( --wp--custom--spacing--8 ) at 50% 0,
+		currentColor,
+		currentColor 49%,
+		transparent 51%,
+		transparent
+	);
+}
+
+.wp-block-separator.is-style-scallop-up {
+	background-image: radial-gradient(
+		var( --wp--custom--spacing--8 ) at 50% 100%,
+		currentColor,
+		currentColor 49%,
+		transparent 51%,
+		transparent
+	);
+}
+
+.wp-block-separator.is-style-wide {
+	background-color: transparent;
+}

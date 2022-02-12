@@ -1,0 +1,209 @@
+.wp-block-image {
+	box-sizing: border-box;
+	margin: var( --wp--style--block-gap ) 0 0;
+}
+
+.wp-block-image img {
+	box-sizing: border-box;
+}
+
+.wp-block-image figcaption {
+	margin-top:    var( --wp--custom--spacing--2 );
+	margin-bottom: 0;
+}
+
+.wp-block-image[class*=is-style-hand-drawn-caption] .components-resizable-box__handle,
+.wp-block-image[class*=is-style-polaroid] .components-resizable-box__handle,
+.wp-block-image[class*=is-style-scotch-tape] .components-resizable-box__handle {
+	display: none;
+}
+
+.wp-block-image.is-style-border img {
+	border: var( --wp--custom--spacing--4 ) solid var( --wp--preset--color--neutral-900 );
+	box-shadow: var( --wp--custom--shadow--md );
+}
+
+.wp-block-image.is-style-shadow img {
+	box-shadow: var( --wp--custom--shadow--md );
+}
+
+.wp-block-image[class*=is-style-frame] {
+	position: relative;
+	padding: var( --wp--custom--spacing--8 );
+	background-color: var( --wp--preset--color--neutral-100 );
+	border: var( --wp--custom--spacing--4 ) solid var( --wp--preset--color--neutral-900 );
+	outline: 1px solid var( --wp--preset--color--black );
+	box-shadow: var( --wp--custom--shadow--md );
+}
+
+.wp-block-image[class*=is-style-frame] figcaption {
+	opacity: 1;
+	position: absolute;
+	left: var( --wp--custom--spacing--8 );
+	right: var( --wp--custom--spacing--8 );
+	bottom: var( --wp--custom--spacing--8 );
+	margin: 0;
+	padding: var( --wp--custom--spacing--4 ) var( --wp--custom--spacing--8 );
+	font-family: var( --wp--preset--font-family--handwriting );
+	color: var( --wp--preset--color--white );
+	background-image: linear-gradient(
+		to right,
+		rgba( 0, 0, 0, 0.2 ),
+		rgba( 0, 0, 0, 0.6 ),
+		rgba( 0, 0, 0, 0.2 )
+	);
+}
+
+.wp-block-image[class*=is-style-frame] > div + figcaption {
+	left: 0;
+	right: 0;
+}
+
+.wp-block-image.is-style-frame-light figcaption {
+	color: var( --wp--preset--color--black );
+	background-image: linear-gradient(
+		to right,
+		rgba( 255, 255, 255, 0.2 ),
+		rgba( 255, 255, 255, 0.6 ),
+		rgba( 255, 255, 255, 0.2 )
+	);
+}
+
+.wp-block-image[class*=is-style-hand-drawn] img {
+	border: 2px solid currentColor;
+	overflow: hidden;
+	box-shadow: var( --wp--custom--shadow--md );
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px !important;
+}
+
+.wp-block-image[class*=is-style-hand-drawn] figcaption {
+	display: flex;
+	gap: 0.5rem;
+	justify-content: center;
+	align-items: baseline;
+	font-family: var( --wp--preset--font-family--handwriting );
+	transform: rotate( 1deg );
+}
+
+.wp-block-image[class*=is-style-hand-drawn] figcaption::before {
+	content: "\2938";
+	transform: rotate( 135deg );
+	padding-top: 0.5rem;
+}
+
+
+@media ( min-width: 40rem ) {
+	.wp-block-image[class*=is-style-hand-drawn-caption] {
+		display: flex;
+		align-items: center;
+		gap: var( --wp--custom--spacing--4 );
+	}
+
+	.wp-block-image.is-style-hand-drawn-caption-left {
+		flex-direction: row-reverse;
+	}
+
+	.wp-block-image[class*=is-style-hand-drawn-caption] img,
+	.wp-block-image[class*=is-style-hand-drawn-caption] > div {
+		flex: 0 0 60%;
+	}
+
+	.wp-block-image[class*=is-style-hand-drawn-caption] > div {
+		height: auto !important;
+	}
+
+	.wp-block-image.is-style-hand-drawn-caption-left figcaption {
+		text-align: right;
+		padding: 0;
+		margin: 0;
+	}
+
+	.wp-block-image.is-style-hand-drawn-caption-right figcaption {
+		text-align: left;
+		padding: 0;
+		margin: 0;
+	}
+
+	.wp-block-image.is-style-hand-drawn-caption-left figcaption::before {
+		content: '';
+	}
+
+	.wp-block-image.is-style-hand-drawn-caption-left figcaption::after {
+		content: "\293B";
+	}
+
+	.wp-block-image.is-style-hand-drawn-caption-right figcaption::before {
+		content: "\293A";
+		transform: none;
+	}
+}
+
+.wp-block-image[class*=is-style-polaroid],
+.wp-block-image[class*=is-style-scotch-tape] {
+	padding:          var( --wp--custom--spacing--4 );
+	background-color: var( --wp--preset--color--white );
+	box-shadow:       var( --wp--custom--shadow--md ),
+	                  0 0 4rem rgba( 255, 255, 235, 0.5 ) inset;
+	transition: all 0.5s ease-in-out;
+	overflow: visible;
+}
+
+.wp-block-image[class*=is-style-polaroid] figcaption,
+.wp-block-image[class*=is-style-scotch-tape] figcaption {
+	margin-top: var( --wp--custom--spacing--4 );
+	font-family: var( --wp--preset--font-family--handwriting );
+	color: var( --wp--preset--color--neutral-700 );
+}
+
+.wp-block-image.is-style-polaroid-tilt-right {
+	transform: scale( 0.99, 0.99 ) rotate( 2deg );
+}
+
+.wp-block-image.is-style-polaroid-tilt-left {
+	transform: scale( 0.99, 0.99 ) rotate( -2deg );
+}
+
+.wp-block-image[class*=is-style-polaroid-tilt]:hover {
+	transform: scale( 1, 1 ) rotate( 0 );
+}
+
+.wp-block-image[class*=is-style-scotch-tape] {
+	position: relative;
+}
+
+.wp-block-image[class*=is-style-scotch-tape]::before,
+.wp-block-image[class*=is-style-scotch-tape]::after {
+	content: "";
+	display: block;
+	position: absolute;
+	background: rgba( 255, 255, 235, 0.5 );
+	box-shadow: var( --wp--custom--shadow--md );
+	height: var( --wp--custom--spacing--8 );
+	margin: auto;
+	width: 7rem;
+	z-index: 1;
+}
+
+.wp-block-image.is-style-scotch-tape::before {
+	left: 50%;
+	margin-left: -3.5rem;
+	top: calc( -1 * var( --wp--custom--spacing--2 ) );
+}
+
+.wp-block-image.is-style-scotch-tape::after {
+	display: none;
+}
+
+.wp-block-image.is-style-scotch-tape-corners::before {
+	left: calc( -1 * var( --wp--custom--spacing--6 ) );
+	top: var( --wp--custom--spacing--4 );
+	transform: rotate( -35deg );
+}
+
+.wp-block-image.is-style-scotch-tape-corners::after {
+	right: calc( -1 * var( --wp--custom--spacing--6 ) ) !important;
+	top: var( --wp--custom--spacing--4 ) !important;
+	bottom: unset !important;
+	left: unset !important;
+	transform: rotate( 45deg);
+}

@@ -1,0 +1,18 @@
+.wp-block-media-text {
+	margin: var( --wp--style--block-gap ) 0 0;
+}
+
+/* some content can break out of this, particular with nested Group blocks, only
+   seen in the site editor and patterns inserter/explorer, worked OK on front
+   and post editor */
+.wp-block-media-text__content {
+        box-sizing: border-box;
+}
+
+.wp-block-media-text.is-style-full-height {
+	min-height: 100vh;
+}
+
+.admin-bar .wp-block-media-text.is-style-full-height {
+	min-height: calc( 100vh - var( --wp-admin--admin-bar--height ) );
+}

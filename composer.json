@@ -1,0 +1,32 @@
+{
+	"name"        : "x3p0-dev/x3p0-profile",
+	"keywords"    : [ "wordpress" ],
+	"homepage"    : "https://github.com/x3p0-dev/x3p0-profile",
+	"license"     : "GPL-2.0-or-later",
+	"authors"     : [
+		{
+			"name"     : "Justin Tadlock",
+			"email"    : "justintadlock@gmail.com",
+			"homepage" : "http://x3p0.com",
+			"role"     : "Developer"
+		}
+	],
+	"support"     : {
+		"issues" : "https://github.com/x3p0-dev/x3p0-profile/issues"
+	},
+	"autoload"    : {
+		"psr-4" : {
+			"X3P0\\Profile\\" : "src/"
+		},
+		"files" : [
+			"src/functions-helpers.php"
+		]
+	},
+	"require"     : {
+                "php" : ">=7.2",
+		"themehybrid/hybrid-mix": "dev-master",
+		"themehybrid/hybrid-contracts": "^1.0"
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true
+}

@@ -1,17 +1,1 @@
-/* no hover/focus style theme.json support */
-.wp-block-button__link:hover,
-.wp-block-button__link:focus {
-        text-decoration: underline;
-}
-
-.is-style-outline > :where( .wp-block-button__link ) {
-        border-width: 1px;
-}
-
-.is-style-hand-drawn-border > :where( .wp-block-button__link ){
-	border: 2px solid currentColor;
-	overflow: hidden;
-	box-shadow: 20px 38px 34px -26px hsla( 0, 0%, 0%, 0.2 ) !important;
-	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px !important;
-	font-family: var( --wp--preset--font-family--cursive );
-}
+.wp-block-button__link:focus,.wp-block-button__link:hover{-webkit-text-decoration:var( --wp--custom--text-decoration );text-decoration:var( --wp--custom--text-decoration )}.is-style-outline>:where(.wp-block-button__link){border-width:1px}.is-style-hand-drawn-border>:where(.wp-block-button__link){border:2px solid;border-radius:255px 15px 225px 15px/15px 225px 15px 255px!important;box-shadow:var( --wp--custom--shadow--sm );font-family:var( --wp--preset--font-family--handwriting );overflow:hidden}

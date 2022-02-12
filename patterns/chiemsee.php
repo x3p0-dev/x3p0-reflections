@@ -1,5 +1,5 @@
-<!-- wp:cover {"url":"<?= esc_url( get_theme_file_uri( 'public/img/patterns/chiemsee.jpg' ) ) ?>","hasParallax":true,"dimRatio":50,"overlayColor":"primary-900","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"2rem","right":"2rem","bottom":"2rem","left":"2rem"}}}} -->
-<div class="wp-block-cover alignfull is-light has-parallax" style="padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem;background-image:url(<?= esc_url( get_theme_file_uri( 'public/img/patterns/chiemsee.jpg' ) ) ?>)"><span aria-hidden="true" class="has-primary-900-background-color wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"border":{"width":"2px","style":"solid"}},"borderColor":"primary-900"} -->
+<!-- wp:cover {"url":"<?= esc_url( get_theme_file_uri( 'public/img/patterns/chiemsee.webp' ) ) ?>","hasParallax":true,"dimRatio":50,"overlayColor":"primary-900","isDark":false,"align":"full","style":{"spacing":{"padding":{"top":"2rem","right":"2rem","bottom":"2rem","left":"2rem"}}}} -->
+<div class="wp-block-cover alignfull is-light has-parallax" style="padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem;background-image:url(<?= esc_url( get_theme_file_uri( 'public/img/patterns/chiemsee.webp' ) ) ?>)"><span aria-hidden="true" class="has-primary-900-background-color wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"border":{"width":"2px","style":"solid"}},"borderColor":"primary-900"} -->
 <div class="wp-block-group has-border-color has-primary-900-border-color" style="border-style:solid;border-width:2px"><!-- wp:cover {"dimRatio":70,"overlayColor":"primary-900"} -->
 <div class="wp-block-cover"><span aria-hidden="true" class="has-primary-900-background-color has-background-dim-70 wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"textColor":"white","layout":{"inherit":true}} -->
 <div class="wp-block-group has-white-color has-text-color"><!-- wp:spacer {"height":"4rem"} -->
@@ -13,24 +13,24 @@
 <!-- /wp:group -->
 
 <!-- wp:paragraph -->
-<p>Hello, my name is Jane Doe.  Welcome to my tiny little profile card on this thing called "the web."  Below, you will find links to all of my sites and social profiles. Have fun exploring!</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","orientation":"vertical"}} -->
 <div class="wp-block-buttons"><!-- wp:button {"width":100,"className":"is-style-outline"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline"><a class="wp-block-button__link">Link A...</a></div>
+<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline"><a class="wp-block-button__link">Lorem Ipsum →</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"width":100,"className":"is-style-outline"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline"><a class="wp-block-button__link">Link B...</a></div>
+<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline"><a class="wp-block-button__link">Lorem Ipsum →</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"width":100,"className":"is-style-outline"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline"><a class="wp-block-button__link">Link C...</a></div>
+<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline"><a class="wp-block-button__link">Lorem Ipsum →</a></div>
 <!-- /wp:button -->
 
 <!-- wp:button {"width":100,"className":"is-style-outline"} -->
-<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline"><a class="wp-block-button__link">Link D...</a></div>
+<div class="wp-block-button has-custom-width wp-block-button__width-100 is-style-outline"><a class="wp-block-button__link">Lorem Ipsum →</a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 

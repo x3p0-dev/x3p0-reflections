@@ -1,0 +1,11 @@
+.wp-block-code {
+	margin: var( --wp--style--block-gap ) 0 0;
+}
+
+pre.wp-block-code > code {
+        overflow: auto;
+        word-wrap: normal;
+	white-space: revert !important;
+        /* wp only lets you set all sides of the border */
+        border-bottom-color: var( --wp--preset--color--neutral-400 );
+}

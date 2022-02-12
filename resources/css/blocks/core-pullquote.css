@@ -1,0 +1,93 @@
+.wp-block-pullquote {
+	margin: var( --wp--style--block-gap ) 0 0;
+	border-top: var( --wp--custom--spacing--2 ) solid currentColor;
+	border-bottom: var( --wp--custom--spacing--2 ) solid currentColor;
+}
+
+/* See: https://github.com/WordPress/gutenberg/issues/38545 */
+.wp-block-pullquote:not( .is-style-solid-color ) {
+	background-color: var( --wp--preset--color--neutral-100 );
+}
+
+.wp-block-pullquote.is-style-mark-top {
+	border-bottom: none;
+}
+
+.wp-block-pullquote blockquote {
+        margin: 0;
+}
+
+.wp-block-pullquote blockquote p {
+        font-size: inherit;
+        line-height: inherit;
+}
+
+.wp-block-pullquote cite,
+.wp-block-pullquote__citation {
+        display: block;
+        margin-top: var( --wp--custom--spacing--4 );
+        font-size: 0.75em;
+        font-weight: 400;
+        font-style: normal;
+        font-variant: small-caps;
+}
+
+.wp-block-pullquote cite::before,
+.wp-block-pullquote__citation::before {
+        content: "\2014\000A0";
+}
+
+.wp-block-pullquote.is-style-mark-double {
+	position: relative;
+	border: none;
+}
+
+.wp-block-pullquote.is-style-mark-double:not( .has-background ) {
+	background: none;
+	padding: 0;
+}
+
+.wp-block-pullquote.is-style-mark-double blockquote { padding: 0; }
+
+.wp-block-pullquote.is-style-mark-double p {
+	position: relative;
+	padding: 0 2.25em;
+}
+
+.wp-block-pullquote.is-style-mark-double p:first-of-type::before,
+.wp-block-pullquote.is-style-mark-double p:first-of-type::after {
+	color: currentColor;
+	font-size: 4em;
+	line-height: 1;
+	font-weight: 700;
+	position: absolute;
+}
+
+.wp-block-pullquote.is-style-mark-double p:first-of-type::before {
+	content: '\201C';
+	top: -0.05em;
+	left: 0;
+}
+
+.wp-block-pullquote.is-style-mark-double p:last-of-type::after {
+	content: '\201E';
+	bottom: 0.05em;
+	right: 0;
+}
+
+.wp-block-pullquote.is-style-mark-top blockquote {
+	position: relative;
+	padding: 1.75em 0 0;
+}
+
+.wp-block-pullquote.is-style-mark-top blockquote::before {
+	content: '\201C';
+	color: currentColor;
+	font-size: 4em;
+	line-height: 85%;
+	font-weight: 700;
+	position: absolute;
+	top:  calc( -1 * var( --wp--custom--spacing--4 ) );
+	left: 50%;
+	transform: translateX( -50% );
+}

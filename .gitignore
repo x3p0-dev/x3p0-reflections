@@ -1,0 +1,5 @@
+/node_modules
+/vendor
+/phpcs.xml
+/.phpcs.xml
+*.map

@@ -1,10 +1,1 @@
-.wp-block-code {
-	margin: var( --wp--style--block-gap ) 0 0;
-}
-
-pre.wp-block-code > code {
-        overflow: auto;
-        word-wrap: normal;
-        /* wp only lets you set all sides of the border */
-        border-bottom-color: var( --wp--preset--color--neutral-400 );
-}
+.wp-block-code{margin:var( --wp--style--block-gap ) 0 0}pre.wp-block-code>code{word-wrap:normal;border-bottom-color:var( --wp--preset--color--neutral-400 );overflow:auto;white-space:revert!important}

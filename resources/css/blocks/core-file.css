@@ -1,0 +1,34 @@
+.wp-block-file {
+	margin: var( --wp--style--block-gap ) 0 0;
+}
+
+.wp-block-file,
+.wp-block-file__content-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var( --wp--style--block-gap );
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wp-block-file .wp-block-file__embed {
+	margin: 0;
+}
+
+/* File block button should use the Core button block.
+   https://github.com/WordPress/gutenberg/issues/27760 */
+.wp-block-file .wp-block-file__button {
+	box-sizing: border-box;
+	margin: 0;
+	padding: var( --wp--custom--spacing--4 ) var( --wp--custom--spacing--8 );
+	border-radius: 0;
+	border: 1px solid currentColor;
+	background: var( --wp--preset--color--transparent );
+	font-size: inherit;
+	line-height: 1;
+}
+
+.wp-block-file .wp-block-file__button:hover,
+.wp-block-file .wp-block-file__button:focus {
+	text-decoration: var( --wp--custom--text-decoration );
+}

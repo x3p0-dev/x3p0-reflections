@@ -1,7 +1,1 @@
-ul, ol {
-	margin: var( --wp--style--block-gap ) 0 0;
-}
-
-.is-style-padded:where( ul, ol ) li + li {
-        margin-top: var( --wp--custom--spacing--2 );
-}
+.is-style-padded:where(ul,ol) li+li{margin-top:var( --wp--custom--spacing--2 )}

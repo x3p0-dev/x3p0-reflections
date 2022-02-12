@@ -1,0 +1,12 @@
+/* limits the max height of the spacer block on smaller screens */
+@media ( max-width: 48rem ) {
+        .wp-block-spacer {
+                max-height: 4rem;
+        }
+}
+
+@media ( max-width: 40rem ) {
+        .wp-block-spacer {
+                max-height: 2rem;
+        }
+}

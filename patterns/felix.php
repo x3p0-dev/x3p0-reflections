@@ -5,19 +5,15 @@
 
 <!-- wp:group {"align":"wide","layout":{"inherit":true}} -->
 <div class="wp-block-group alignwide"><!-- wp:media-text {"mediaId":9267,"mediaLink":"http://localhost/x3p0-profile/46561c16fc18dc371-43208413-2048x1365-2/","mediaType":"image","mediaSizeSlug":"full","verticalAlignment":"center","imageFill":true,"backgroundColor":"white","textColor":"neutral-700"} -->
-<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center is-image-fill has-neutral-700-color has-white-background-color has-text-color has-background"><figure class="wp-block-media-text__media" style="background-image:url(<?= esc_url( get_theme_file_uri( 'public/img/patterns/felix.jpg' ) ) ?>);background-position:50% 50%"><img src="<?= esc_url( get_theme_file_uri( 'public/img/patterns/felix.jpg' ) ) ?>" alt="" class="wp-image-9267 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:spacer {"height":"12rem"} -->
+<div class="wp-block-media-text alignwide is-stacked-on-mobile is-vertically-aligned-center is-image-fill has-neutral-700-color has-white-background-color has-text-color has-background"><figure class="wp-block-media-text__media" style="background-image:url(<?= esc_url( get_theme_file_uri( 'public/img/patterns/felix.webp' ) ) ?>);background-position:50% 50%"><img src="<?= esc_url( get_theme_file_uri( 'public/img/patterns/felix.webp' ) ) ?>" alt="" class="wp-image-9267 size-full"/></figure><div class="wp-block-media-text__content"><!-- wp:spacer {"height":"12rem"} -->
 <div style="height:12rem" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
 <!-- wp:group {"style":{"spacing":{"blockGap":"3rem"}}} -->
-<div class="wp-block-group"><!-- wp:group {"tagName":"header"} -->
-<header class="wp-block-group"><!-- wp:heading {"level":1,"style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.075rem","fontStyle":"normal","fontWeight":"400"}},"textColor":"neutral-700","fontSize":"3-xl"} -->
-<h1 class="has-neutral-700-color has-text-color has-3-xl-font-size" id="felix-doe" style="font-style:normal;font-weight:400;text-transform:uppercase;letter-spacing:0.075rem">Felix Doe</h1>
-<!-- /wp:heading -->
+<div class="wp-block-group"><!-- wp:group {"tagName":"header","style":{"spacing":{"blockGap":"0.25rem"}}} -->
+<header class="wp-block-group"><!-- wp:site-title {"isLink":false,"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"400","letterSpacing":"0.075rem"}},"fontSize":"3-xl"} /-->
 
-<!-- wp:heading {"style":{"typography":{"fontStyle":"normal","fontWeight":"200","textTransform":"uppercase","letterSpacing":"0.06125rem","lineHeight":"1"}},"fontSize":"lg"} -->
-<h2 class="has-lg-font-size" id="lead-backend-engineer" style="font-style:normal;font-weight:200;line-height:1;text-transform:uppercase;letter-spacing:0.06125rem">Lead Backend Engineer</h2>
-<!-- /wp:heading --></header>
+<!-- wp:site-tagline {"style":{"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"300"}},"fontFamily":"headings"} /--></header>
 <!-- /wp:group -->
 
 <!-- wp:group -->

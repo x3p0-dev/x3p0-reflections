@@ -1,0 +1,5 @@
+/* no hover/focus style theme.json support */
+.wp-block-site-title a:hover,
+.wp-block-site-title a:focus {
+	text-decoration: var( --wp--custom--text-decoration );
+}

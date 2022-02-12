@@ -1,11 +1,1 @@
-.wp-block-group:where( .has-background ) {
-        padding: var( --wp--custom--spacing--global );
-}
-
-.wp-block-group.is-style-hand-drawn-border {
-	padding: var( --wp--custom--spacing--global );
-	border: 2px solid currentColor;
-	overflow: hidden;
-	box-shadow: 20px 38px 34px -26px hsla( 0, 0%, 0%, 0.2 ) !important;
-	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px !important;
-}
+.wp-block-group:where(.has-background){padding:var( --wp--custom--spacing--global )}.wp-block-group.is-style-hand-drawn-border{border:2px solid;border-radius:255px 15px 225px 15px/15px 225px 15px 255px!important;box-shadow:var( --wp--custom--shadow--md );overflow:hidden;padding:var( --wp--custom--spacing--global )}

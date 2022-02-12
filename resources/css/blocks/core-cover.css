@@ -1,0 +1,35 @@
+.admin-bar .wp-block-cover[style*=min-height\:100vh] {
+	min-height: calc( 100vh - var( --wp-admin--admin-bar--height ) ) !important;
+}
+
+.wp-block-cover .wp-block-cover__inner-container,
+.wp-block-cover.is-light .wp-block-cover__inner-container {
+	color: var( --wp--preset--color--white );
+}
+
+.wp-block-cover.is-style-hand-drawn-border {
+	padding: var( --wp--custom--spacing--global );
+	overflow: hidden;
+	box-shadow: var( --wp--custom--shadow--md );
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px !important;
+}
+
+.wp-block-cover[class*=is-style-mix-blend-] .wp-block-cover__inner-container {
+	mix-blend-mode: var( --wp--custom--mix-blend-mode );
+}
+
+.is-style-mix-blend-multiply { --wp--custom--mix-blend-mode: multiply; }
+.is-style-mix-blend-screen { --wp--custom--mix-blend-mode: screen; }
+.is-style-mix-blend-overlay { --wp--custom--mix-blend-mode: overlay; }
+.is-style-mix-blend-darken { --wp--custom--mix-blend-mode: darken; }
+.is-style-mix-blend-lighten { --wp--custom--mix-blend-mode: lighten; }
+.is-style-mix-blend-color-dodge { --wp--custom--mix-blend-mode: dodge; }
+.is-style-mix-blend-color-burn { --wp--custom--mix-blend-mode: color-burn; }
+.is-style-mix-blend-hard-light { --wp--custom--mix-blend-mode: hard-light; }
+.is-style-mix-blend-soft-light { --wp--custom--mix-blend-mode: soft-light; }
+.is-style-mix-blend-difference { --wp--custom--mix-blend-mode: difference; }
+.is-style-mix-blend-exclusion { --wp--custom--mix-blend-mode: exclusion; }
+.is-style-mix-blend-hue { --wp--custom--mix-blend-mode: hue; }
+.is-style-mix-blend-saturation { --wp--custom--mix-blend-mode: saturation; }
+.is-style-mix-blend-color { --wp--custom--mix-blend-mode: color; }
+.is-style-mix-blend-luminosity { --wp--custom--mix-blend-mode: luminosity; }

@@ -1,0 +1,11 @@
+.wp-block-gallery {
+	margin: var( --wp--style--block-gap ) 0 0;
+}
+
+:where( .wp-block-gallery ) {
+        --gallery-block--gutter-size: var( --wp--custom--spacing--4 );
+}
+
+.blocks-gallery-caption {
+        margin-top: 0;
+}
