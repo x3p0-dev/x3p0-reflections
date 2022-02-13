@@ -36,7 +36,6 @@
 .wp-block-quote.is-style-line-mark {
 	position: relative;
 	z-index: 0;
-	color: #4a5568;
 }
 
 .wp-block-quote.is-style-line-mark::before {

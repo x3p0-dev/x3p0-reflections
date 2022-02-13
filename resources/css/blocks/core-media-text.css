@@ -16,3 +16,10 @@
 .admin-bar .wp-block-media-text.is-style-full-height {
 	min-height: calc( 100vh - var( --wp-admin--admin-bar--height ) );
 }
+
+.wp-block-media-text.is-style-hand-drawn-border {
+	border: 2px solid currentColor;
+	overflow: hidden;
+	box-shadow: var( --wp--custom--shadow--md );
+	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px !important;
+}

@@ -12,3 +12,8 @@ register_block_style( 'core/media-text', [
 	'name' => 'full-height',
 	'label' => __( 'Full Height', 'x3p0-reflections' )
 ] );
+
+register_block_style( 'core/media-text', [
+	'name' => 'hand-drawn-border',
+	'label' => __( 'Hand-Drawn Border', 'x3p0-reflections' )
+] );

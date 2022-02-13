@@ -8,7 +8,7 @@
         border-width: 1px;
 }
 
-.is-style-hand-drawn-border > :where( .wp-block-button__link ){
+.is-style-hand-drawn > :where( .wp-block-button__link ){
 	border: 2px solid currentColor;
 	overflow: hidden;
 	box-shadow: var( --wp--custom--shadow--sm );

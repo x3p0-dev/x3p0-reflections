@@ -9,6 +9,6 @@
  */
 
 register_block_style( 'core/button', [
-	'name' => 'hand-drawn-border',
-	'label' => __( 'Hand-Drawn Border', 'x3p0-reflections' )
+	'name' => 'hand-drawn',
+	'label' => __( 'Hand Drawn', 'x3p0-reflections' )
 ] );
