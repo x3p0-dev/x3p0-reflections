@@ -19,8 +19,7 @@ mix.setPublicPath( publicPath );
 
 // Set Laravel Mix options.
 mix.options( {
-	postCss        : [ require( 'postcss-preset-env' )() ],
-	processCssUrls : false,
+	processCssUrls: false,
 	terser: {
 		terserOptions: {
 			format: { comments: false }
