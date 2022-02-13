@@ -33,6 +33,7 @@ class BlockPatterns implements Bootable {
 	 * @return void
 	 */
         public function register() {
+		// Translators: %s is pattern category name.
                 $label = __( 'X3P0: %s', 'x3p0-reflections' );
 
 		// Registers a block pattern category type.
@@ -51,13 +52,11 @@ class BlockPatterns implements Bootable {
 
 		// Register block patterns.
                 $this->add( 'artist', [
-                        'title' => __( 'Artist', 'x3p0-reflections' ),
-                        'viewportWidth' => 672
+                        'title' => __( 'Artist', 'x3p0-reflections' )
                 ] );
 
                 $this->add( 'chiemsee', [
-                        'title' => __( 'Chiemsee', 'x3p0-reflections' ),
-                        'viewportWidth' => 672
+                        'title' => __( 'Chiemsee', 'x3p0-reflections' )
                 ] );
 
                 $this->add( 'felix', [
@@ -66,8 +65,7 @@ class BlockPatterns implements Bootable {
                 ] );
 
                 $this->add( 'gamer', [
-                        'title' => __( 'Gamer', 'x3p0-reflections' ),
-                        'viewportWidth' => 672
+                        'title' => __( 'Gamer', 'x3p0-reflections' )
                 ] );
 
                 $this->add( 'mondays', [
@@ -76,18 +74,15 @@ class BlockPatterns implements Bootable {
                 ] );
 
                 $this->add( 'mountain-field', [
-                        'title' => __( 'Mountain Field', 'x3p0-reflections' ),
-                        'viewportWidth' => 672
+                        'title' => __( 'Mountain Field', 'x3p0-reflections' )
                 ] );
 
                 $this->add( 'night-sky', [
-                        'title' => __( 'Night Sky', 'x3p0-reflections' ),
-                        'viewportWidth' => 672
+                        'title' => __( 'Night Sky', 'x3p0-reflections' )
                 ] );
 
                 $this->add( 'notes-in-the-void', [
-                        'title' => __( 'Notes in the Void', 'x3p0-reflections' ),
-                        'viewportWidth' => 672
+                        'title' => __( 'Notes in the Void', 'x3p0-reflections' )
                 ] );
 
                 $this->add( 'reeds', [
@@ -96,8 +91,7 @@ class BlockPatterns implements Bootable {
                 ] );
 
                 $this->add( 'reflections', [
-                        'title' => __( 'Reflections', 'x3p0-reflections' ),
-                        'viewportWidth' => 672
+                        'title' => __( 'Reflections', 'x3p0-reflections' )
                 ] );
         }
 
