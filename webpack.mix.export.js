@@ -18,15 +18,24 @@ let exportPath = `${process.env.npm_package_name}`;
 // Root-level files to include.
 let files = [
 	'changelog.md',
-	'plugin.php',
+	'functions.php',
+	'index.php',
 	'license.md',
-	'readme.txt'
+	'readme.md',
+	'readme.txt',
+	'screenshot.png',
+	'style.css',
+	'theme.json'
 ];
 
 // Folders to include.
 let folders = [
+	'parts',
+	'patterns',
 	'public',
+	'resources',
 	'src',
+	'templates',
 	'vendor'
 ];
 
