@@ -71,18 +71,6 @@ figcaption {
  * -----------------------------------------------------------------------------
 **/
 
-@media ( max-width: 68rem ) {
-	.wp-site-blocks > [class*=wp-container-] > .alignwide {
-		max-width: calc( 100% - ( 2 * var( --wp--custom--spacing--global ) ) );
-	}
-}
-
-@media ( max-width: 42rem ) {
-	.wp-site-blocks > [class*=wp-container-] > :not( .alignfull ) {
-		max-width: calc( 100% - ( 2 * var( --wp--custom--spacing--global ) ) );
-	}
-}
-
 :first-child {
         margin-top: 0;
 }
