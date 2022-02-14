@@ -14,7 +14,7 @@ WordPress block theme for creating profile, links, and similar one-page sites.
 
 == Changelog ==
 
-Please see the `changelog.md` file included with the plugin file.  Or, you can view the [online change log](https://github.com/x3p0-dev/x3p0-reflections/blob/master/changelog.md).
+Please see the `changelog.md` file included within the theme folder.  Or, you can view the [online change log](https://github.com/x3p0-dev/x3p0-reflections/blob/master/changelog.md).
 
 == Resources ==
 
