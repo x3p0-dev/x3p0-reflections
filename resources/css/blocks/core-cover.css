@@ -2,9 +2,12 @@
 	min-height: calc( 100vh - var( --wp-admin--admin-bar--height ) ) !important;
 }
 
-.wp-block-cover .wp-block-cover__inner-container,
-.wp-block-cover.is-light .wp-block-cover__inner-container {
+.wp-block-cover .wp-block-cover__inner-container {
 	color: var( --wp--preset--color--white );
+}
+
+.wp-block-cover.is-light .wp-block-cover__inner-container {
+	color: var( --wp--preset--color--neutral-900 );
 }
 
 .wp-block-cover.is-style-hand-drawn-border {
