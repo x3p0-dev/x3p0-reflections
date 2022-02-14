@@ -2,6 +2,8 @@
 
 A one-page user-profile WordPress theme.  Really, it's just a single page.
 
+[View Demo →](https://x3p0.com/reflections/)
+
 ## Recommended
 
 This theme is designed to work with WordPress 5.9+.  However, it also closely follows the development of the [Gutenberg plugin](https://wordpress.org/plugins/gutenberg).  For the full power of the theme, users should install and activate the latest version.
