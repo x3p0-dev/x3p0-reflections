@@ -103,9 +103,9 @@ class ImageSizes implements Bootable {
                 $sizes[ 'x3p0-21x9-xl'] = __( '21:9 (Landscape) - XL',     'x3p0-reflections' );
 
 		// 18:5 - Landscape.
-		$sizes[ 'x3p0-18x5-md'] = __( '18:5 - Medium (Landscape)', 'x3p0-reflections' );
-		$sizes[ 'x3p0-18x5-lg'] = __( '18:5 - Large (Landscape)', 'x3p0-reflections' );
-		$sizes[ 'x3p0-18x5-xl'] = __( '18:5 - XL (Landscape)', 'x3p0-reflections' );
+		$sizes[ 'x3p0-18x5-md'] = __( '18:5 (Landscape) - Medium', 'x3p0-reflections' );
+		$sizes[ 'x3p0-18x5-lg'] = __( '18:5 (Landscape) - Large', 'x3p0-reflections' );
+		$sizes[ 'x3p0-18x5-xl'] = __( '18:5 (Landscape) - XL', 'x3p0-reflections' );
 
 		// 9:16 - Portrait
                 $sizes[ 'x3p0-9x16-md'] = __( '9:16 (Portrait) - Medium', 'x3p0-reflections' );
