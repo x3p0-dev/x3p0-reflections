@@ -14,11 +14,6 @@ register_block_style( 'core/image', [
 ] );
 
 register_block_style( 'core/image', [
-	'name' => 'cover-overlay',
-	'label' => __( 'Cover Overlay', 'x3p0-reflections' )
-] );
-
-register_block_style( 'core/image', [
 	'name' => 'frame',
 	'label' => __( 'Frame', 'x3p0-reflections' )
 ] );
