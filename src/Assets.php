@@ -68,7 +68,7 @@ class Assets implements Bootable {
          * @link https://github.com/WordPress/gutenberg/pull/36394
 	 *
 	 * @since  1.0.0
-	 * @access public
+         * @access protected
 	 * @return void
 	 */
         protected function fontsUrl() {

@@ -99,7 +99,7 @@ class BlockPatterns implements Bootable {
          * Registers a block pattern.
          *
          * @since  1.0.0
-         * @access public
+         * @access protected
          * @param  string  $slug
          * @param  array   $args
          * @return void
@@ -125,7 +125,7 @@ class BlockPatterns implements Bootable {
 	 * Returns a pattern file's content.
 	 *
 	 * @since  1.0.0
-	 * @access public
+         * @access protected
          * @param  string  $slug
 	 * @return void
 	 */
