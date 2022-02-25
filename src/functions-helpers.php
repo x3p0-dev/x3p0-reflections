@@ -17,6 +17,8 @@ use Hybrid\Mix\Mix;
  * without using the singleton pattern and gives third-party devs easy access to
  * the objects if they need to unhook actions/filters added by the classes.
  *
+ * Child theme authors can access the objects via `theme( $abstract )`.
+ *
  * @since  1.0.0
  * @access public
  * @param  string  $abstract
@@ -25,6 +27,7 @@ use Hybrid\Mix\Mix;
 function theme( string $abstract = '' ) {
 	static $bindings = null;
 
+	// On first run, create new components and boot them.
 	if ( is_null( $bindings ) ) {
 		$bindings = [
 			Assets::class => new Assets(

@@ -1,6 +1,6 @@
 <?php
 /**
- * Template handling.
+ * Assets handling.
  *
  * @author    Justin Tadlock <justintadlock@gmail.com>
  * @copyright 2022 Justin Tadlock
