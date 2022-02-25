@@ -39,7 +39,11 @@
 	overflow: hidden;
 	box-shadow: var( --wp--custom--shadow--sm );
 	border-radius: 255px 15px 225px 15px/15px 225px 15px 255px !important;
-	font-family: var( --wp--preset--font-family--cursive );
+	font-family: var( --wp--preset--font-family--handwriting );
+}
+
+.wp-block-social-links.is-style-hand-drawn-border .wp-block-social-link :where( a, button ) {
+	font-family: inherit;
 }
 
 .wp-block-social-links:not([class*=is-style-]) .wp-block-social-link :where( a, button ),
