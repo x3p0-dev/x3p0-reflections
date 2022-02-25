@@ -127,7 +127,7 @@ class BlockPatterns implements Bootable {
 	 * @since  1.0.0
          * @access protected
          * @param  string  $slug
-	 * @return void
+	 * @return string
 	 */
         protected function patternContent( string $slug ) {
                 ob_start();
