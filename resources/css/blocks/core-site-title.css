@@ -1,3 +1,35 @@
+.wp-block-site-title.has-background {
+	padding: var( --wp--custom--spacing--global );
+}
+
+.wp-block-site-title.is-style-text-shadow-sm {
+	text-shadow: var( --wp--custom--text-shadow--sm );
+}
+
+.wp-block-site-title.is-style-text-shadow-md {
+	text-shadow: var( --wp--custom--text-shadow--md );
+}
+
+.wp-block-site-title.is-style-text-shadow-lg {
+	text-shadow: var( --wp--custom--text-shadow--lg );
+}
+
+.wp-block-site-title.is-style-bg-clip-text,
+.editor-styles-wrapper .wp-block-site-title.is-style-bg-clip-text {
+	padding: 0;
+	background-clip: text !important;
+	-webkit-background-clip: text !important;
+	color: transparent !important;
+}
+
+.wp-block-site-title.is-style-bg-clip-text:not( .has-background ) {
+	background: var( --wp--preset--gradient--cool-to-warm-spectrum );
+}
+
+.wp-block-site-title.is-style-bg-clip-text > :where( a, span ) {
+	color: inherit !important;
+}
+
 /* no hover/focus style theme.json support */
 .wp-block-site-title a:hover,
 .wp-block-site-title a:focus {

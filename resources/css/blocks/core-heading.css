@@ -17,23 +17,3 @@
 :where( h1, h2, h3, h4, h5, h6 ).is-style-text-shadow-lg {
 	text-shadow: var( --wp--custom--text-shadow--lg );
 }
-
-:where( h1, h2, h3, h4, h5, h6 ).is-style-bg-clip-text,
-.editor-styles-wrapper :where( h1, h2, h3, h4, h5, h6 ).is-style-bg-clip-text {
-	padding: 0;
-	background-clip: text !important;
-	-webkit-background-clip: text !important;
-	color: transparent;
-}
-
-:where( h1, h2, h3, h4, h5, h6 ).is-style-bg-clip-text:not( .has-background ) {
-	background: var( --wp--preset--gradient--cool-to-warm-spectrum );
-}
-
-:where( h1, h2, h3, h4, h5, h6 ).is-style-bg-clip-text > a {
-	color: transparent;
-}
-
-:where( h1, h2, h3, h4, h5, h6 ).is-style-bg-clip-text > span {
-	color: inherit;
-}

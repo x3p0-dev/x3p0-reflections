@@ -107,21 +107,6 @@ class Assets implements Bootable {
                                 'path'   => get_theme_file_path( "public/css/blocks/{$name}.css" )
                         ] );
                 }
-
-		// Make sure heading styles are loaded for all heading-type blocks.
-		$heading_blocks = [
-			'core/post-title',
-			'core/query-title',
-			'core/site-title'
-		];
-
-		foreach ( $heading_blocks as $block ) {
-			wp_enqueue_block_style( $block, [
-				'handle' => "x3p0-reflections-block-core-heading",
-				'src'    => $this->mix->asset( "css/blocks/core-heading.css" ),
-				'path'   => get_theme_file_path( "public/css/blocks/core-heading.css" )
-			] );
-		}
         }
 
         /**

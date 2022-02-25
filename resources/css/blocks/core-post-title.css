@@ -1,3 +1,35 @@
+.wp-block-post-title.has-background {
+	padding: var( --wp--custom--spacing--global );
+}
+
+.wp-block-post-title.is-style-text-shadow-sm {
+	text-shadow: var( --wp--custom--text-shadow--sm );
+}
+
+.wp-block-post-title.is-style-text-shadow-md {
+	text-shadow: var( --wp--custom--text-shadow--md );
+}
+
+.wp-block-post-title.is-style-text-shadow-lg {
+	text-shadow: var( --wp--custom--text-shadow--lg );
+}
+
+.wp-block-post-title.is-style-bg-clip-text,
+.editor-styles-wrapper .wp-block-post-title.is-style-bg-clip-text {
+	padding: 0;
+	background-clip: text !important;
+	-webkit-background-clip: text !important;
+	color: transparent !important;
+}
+
+.wp-block-post-title.is-style-bg-clip-text:not( .has-background ) {
+	background: var( --wp--preset--gradient--cool-to-warm-spectrum );
+}
+
+.wp-block-post-title.is-style-bg-clip-text > :where( a, span ) {
+	color: inherit !important;
+}
+
 /* no hover/focus style theme.json support */
 .wp-block-post-title a:hover,
 .wp-block-post-title a:focus {
