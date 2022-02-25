@@ -104,7 +104,7 @@ class Assets implements Bootable {
                         wp_enqueue_block_style( $block, [
                                 'handle' => "x3p0-reflections-block-{$name}",
                                 'src'    => $this->mix->asset( "css/blocks/{$name}.css" ),
-                                'path'   => get_theme_file_path( "public/css/blocks/{$name}.css" )
+                                'path'   => get_parent_theme_file_path( "public/css/blocks/{$name}.css" )
                         ] );
                 }
         }
