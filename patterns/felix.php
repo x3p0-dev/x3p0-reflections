@@ -1,3 +1,12 @@
+<?php
+/**
+ * Title: Felix
+ * Slug: x3p0-reflections/felix
+ * Categories: x3p0-reflections-cards
+ * Block Types: core/template-part/content
+ * Viewport Width: 1056
+ */
+?>
 <!-- wp:cover {"dimRatio":50,"overlayColor":"neutral-300","minHeight":100,"minHeightUnit":"vh","isDark":false,"align":"full"} -->
 <div class="wp-block-cover alignfull is-light" style="min-height:100vh"><span aria-hidden="true" class="has-neutral-300-background-color wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":"2rem"} -->
 <div style="height:2rem" aria-hidden="true" class="wp-block-spacer"></div>

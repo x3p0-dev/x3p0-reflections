@@ -1,3 +1,12 @@
+<?php
+/**
+ * Title: Reflections
+ * Slug: x3p0-reflections/reflections
+ * Categories: x3p0-reflections-cards
+ * Block Types: core/template-part/content
+ * Viewport Width: 672
+ */
+?>
 <!-- wp:cover {"minHeight":100,"minHeightUnit":"vh","customGradient":"linear-gradient(180deg,rgb(175,200,207) 0%,rgb(44,118,155) 50%,rgb(12,38,53) 100%)","isDark":false,"align":"full","style":{"color":{}}} -->
 <div class="wp-block-cover alignfull is-light" style="min-height:100vh"><span aria-hidden="true" class="has-background-dim-100 wp-block-cover__gradient-background has-background-dim has-background-gradient" style="background:linear-gradient(180deg,rgb(175,200,207) 0%,rgb(44,118,155) 50%,rgb(12,38,53) 100%)"></span><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":"6rem"} -->
 <div style="height:6rem" aria-hidden="true" class="wp-block-spacer"></div>

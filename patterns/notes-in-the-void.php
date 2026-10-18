@@ -1,3 +1,12 @@
+<?php
+/**
+ * Title: Notes in the Void
+ * Slug: x3p0-reflections/notes-in-the-void
+ * Categories: x3p0-reflections-cards
+ * Block Types: core/template-part/content
+ * Viewport Width: 672
+ */
+?>
 <!-- wp:cover {"url":"<?= esc_url( get_theme_file_uri( 'public/img/patterns/notes-in-the-void.webp' ) ) ?>","id":9234,"dimRatio":20,"overlayColor":"primary-800","align":"full","style":{"spacing":{"padding":{"top":"2rem","right":"2rem","bottom":"2rem","left":"2rem"}},"color":{}}} -->
 <div class="wp-block-cover alignfull" style="padding-top:2rem;padding-right:2rem;padding-bottom:2rem;padding-left:2rem"><span aria-hidden="true" class="has-primary-800-background-color has-background-dim-20 wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-9234" alt="" src="<?= esc_url( get_theme_file_uri( 'public/img/patterns/notes-in-the-void.webp' ) ) ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:spacer {"height":"4rem"} -->
 <div style="height:4rem" aria-hidden="true" class="wp-block-spacer"></div>

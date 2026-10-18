@@ -1,3 +1,12 @@
+<?php
+/**
+ * Title: Mountain Field
+ * Slug: x3p0-reflections/mountain-field
+ * Categories: x3p0-reflections-cards
+ * Block Types: core/template-part/content
+ * Viewport Width: 672
+ */
+?>
 <!-- wp:cover {"url":"<?= esc_url( get_theme_file_uri( 'public/img/patterns/mountain-field.webp' ) ) ?>","id":9552,"hasParallax":true,"dimRatio":50,"overlayColor":"primary-700","minHeight":100,"minHeightUnit":"vh","isDark":false,"align":"full"} -->
 <div class="wp-block-cover alignfull is-light has-parallax" style="background-image:url(<?= esc_url( get_theme_file_uri( 'public/img/patterns/mountain-field.webp' ) ) ?>);min-height:100vh"><span aria-hidden="true" class="has-primary-700-background-color wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"style":{"border":{"radius":"0px"},"spacing":{"blockGap":"0px"}},"layout":{"inherit":true}} -->
 <div class="wp-block-group" style="border-radius:0px"><!-- wp:group {"style":{"spacing":{"blockGap":"0px"},"border":{"radius":"8px"}}} -->

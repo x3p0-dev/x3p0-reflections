@@ -50,6 +50,7 @@ class BlockPatterns implements Bootable {
                         'categoryTypes' => [ 'x3p0' ]
                 ] );
 
+		/*
 		// Register block patterns.
                 $this->add( 'artist', [
                         'title' => __( 'Artist', 'x3p0-reflections' )
@@ -93,6 +94,7 @@ class BlockPatterns implements Bootable {
                 $this->add( 'reflections', [
                         'title' => __( 'Reflections', 'x3p0-reflections' )
                 ] );
+		*/
         }
 
         /**

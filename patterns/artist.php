@@ -1,3 +1,12 @@
+<?php
+/**
+ * Title: Artist
+ * Slug: x3p0-reflections/artist
+ * Categories: x3p0-reflections-cards
+ * Block Types: core/template-part/content
+ * Viewport Width: 672
+ */
+?>
 <!-- wp:cover {"url":"<?= esc_url( get_theme_file_uri( 'public/img/patterns/artist.webp' ) ) ?>","id":9279,"dimRatio":90,"minHeight":100,"minHeightUnit":"vh","gradient":"cool-to-warm-spectrum","align":"full","style":{"color":{}}} -->
 <div class="wp-block-cover alignfull" style="min-height:100vh"><span aria-hidden="true" class="has-background-dim-90 wp-block-cover__gradient-background has-cool-to-warm-spectrum-gradient-background has-background-dim has-background-gradient"></span><img class="wp-block-cover__image-background wp-image-9279" alt="" src="<?= esc_url( get_theme_file_uri( 'public/img/patterns/artist.webp' ) ) ?>" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:group {"layout":{"inherit":true}} -->
 <div class="wp-block-group"><!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"border":{"radius":"0.5rem"},"spacing":{}},"backgroundColor":"neutral-800","textColor":"neutral-200"} -->
